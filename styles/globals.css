@@ -5,8 +5,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-.maxWidth{
+
+
+.maxpad{
+
   padding: 50px 15px;
-  max-width: 1200px ;
-  margin: auto;
 }

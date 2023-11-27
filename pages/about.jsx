@@ -3,7 +3,7 @@ import React from "react";
 const about = () => {
   return (
     <>
-      <div className="about">
+      <div className="about maxpad">
         <div className="aboutmain">
           <div className="aboutimg"></div>
           <div className="aboutcontent">

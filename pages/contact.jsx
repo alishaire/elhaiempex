@@ -1,7 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import emailjs from '@emailjs/browser';
+
+
 const contact = () => {
-  const [openmodel, setOpenmodel] = useState(true);
+  const [openmodel, setOpenmodel] = useState(false);
+
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -14,9 +18,19 @@ const contact = () => {
           console.log(error.text);
       });
   };
+
+
+  useEffect(() => {
+    if (openmodel) {
+      window.document.body.style.overflow = "hidden";
+    } else {
+      window.document.body.style.overflow = "visible";
+    }
+  }, [openmodel]);
+
   return (
     <>
-      <div className="contact">
+      <div className="contact maxpad">
         <div className="maincontact">
           <div className="contactimg"></div>
           <div className="contact-content">
@@ -48,17 +62,18 @@ const contact = () => {
           </div>
         </div>
       </div>
-      <div className="contactmodel">
-        <div className={openmodel ? "contactopenmodel" : "closecontectmodel"}>
+
+
+      <div className= {openmodel ? "contactmodel open" : "contactmodel" }>
+        <div className="contactopenmodel">
           <div className="contact-cross">
             <i
               onClick={() => setOpenmodel(false)}
-              className="fa-solid fa-trash"
+              className="fa-solid fa-xmark"
             ></i>
           </div>
           <div className="contactform">
-            <h2>Contact Us</h2>
-            <form  ref={form} onSubmit={sendEmail}>
+            <form action="" ref={form} onSubmit={sendEmail}>
               <div className="naming-div">
                 <div>
                   <label htmlFor=""> First Name</label>
@@ -87,10 +102,19 @@ const contact = () => {
               </div>
               <div>
                 <label htmlFor="">Comment Or Message</label>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Enter Your Comment"></textarea>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  
+                  placeholder="Enter Your Comment"
+                ></textarea>
               </div>
               <div>
-                <button type="submit"> Send Message <i className="fa-solid fa-paper-plane"></i></button>
+                <button>
+                  {" "}
+                  Send Message <i className="fa-solid fa-paper-plane"></i>
+                </button>
               </div>
             </form>
           </div>

@@ -1,29 +1,120 @@
 .navbar {
-  background-color: #8f8e89;
+  background-color: #888c;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 50px -2px rgba(0, 0, 0, 0.14);
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
 }
 .navbar nav {
   max-width: 1200px;
-  border: 1px solid red;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 7px 20px;
 }
+
+.navbar nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar nav .logo img {
   width: 200px;
 }
-.navbar nav div ul {
+.navbar nav ul {
   display: flex;
   list-style: none;
 }
-.navbar nav div ul li{
-    padding: 7px 20px;
+.navbar nav ul li {
+  padding: 7px 20px;
+  position: relative;
 }
-.navbar nav div ul li a{
-color: white;
-text-decoration: none;
-transition: all 0.4s linear;
+.dropdown{
+  position: absolute;
+  top: 10px;
+  left: -50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #888c;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0.5s linear;
+  pointer-events: none;
 }
-.navbar nav div ul li a:hover{
-    color: rgb(52, 52, 197);
+.navbar nav ul li:hover .dropdown{
+  top: 30px;
+  pointer-events: all;
+
+
+opacity: 1;
+}
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.navbar nav ul li a:hover {
+  color: rgb(0, 255, 0);
+}
+
+.bars {
+  font-size: 25px;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+}
+
+.navbar nav ul li:first-child {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar nav .logo img {
+    width: 140px;
+  }
+
+  .navbar nav ul {
+    position: absolute;
+    background-color: gray;
+    height: 100vh;
+    width: 70%;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: 0.5s;
+  }
+
+  .navbar nav ul.active {
+    transform: translateX(0%);
+  }
+
+  .navbar nav ul li:first-child {
+    display: block;
+  }
+
+  .navbar nav ul li:first-child img {
+    width: 70%;
+  }
+
+  .navbar nav ul li {
+    padding: 0;
+  }
+  .navbar nav ul li a {
+    display: block;
+    padding: 10px;
+  }
+
+  .bars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
