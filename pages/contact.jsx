@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 
 
-const contact = () => {
+const Contact = () => {
   const [openmodel, setOpenmodel] = useState(false);
 
 
@@ -124,4 +124,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact

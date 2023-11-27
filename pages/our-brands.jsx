@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 
 
-const brands = () => {
+const Brands = () => {
   const imgArray = [
     {
       img: "/assets/logos/LOGO-26.png.crdownload",
@@ -137,4 +137,4 @@ const brands = () => {
   );
 };
 
-export default brands;
+export default Brands;

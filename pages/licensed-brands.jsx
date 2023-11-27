@@ -2,7 +2,7 @@ import React , { useState, useEffect } from 'react'
 
 
 
-const licensed = () => {
+const Licensed = () => {
 
     const imgArray = [
      
@@ -162,4 +162,4 @@ const licensed = () => {
   )
 }
 
-export default licensed
+export default Licensed

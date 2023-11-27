@@ -1,6 +1,6 @@
 import React from "react";
 
-const store = () => {
+const Store = () => {
   return (
     <>
       <div className="outline maxpad">
@@ -29,4 +29,4 @@ const store = () => {
   );
 };
 
-export default store;
+export default Store;

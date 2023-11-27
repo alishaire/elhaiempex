@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Galleria } from "primereact/galleria";
-const products = () => {
+const Products = () => {
   const [openmodel, setOpenmodel] = useState(false);
   useEffect(() => {
     if (openmodel) {
@@ -280,4 +280,4 @@ const products = () => {
   );
 };
 
-export default products;
+export default Products;
