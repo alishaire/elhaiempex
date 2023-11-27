@@ -1,7 +1,19 @@
-import React, { useState } from "react";
-
+import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 const contact = () => {
   const [openmodel, setOpenmodel] = useState(true);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_4hzwrg6', 'template_xea43tt', form.current, 'CYeyoykc_ssRA-91-')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <>
       <div className="contact">
@@ -46,39 +58,39 @@ const contact = () => {
           </div>
           <div className="contactform">
             <h2>Contact Us</h2>
-            <form action="">
+            <form  ref={form} onSubmit={sendEmail}>
               <div className="naming-div">
                 <div>
                   <label htmlFor=""> First Name</label>
-                  <input type="text" placeholder="Enter Your First Name" />
+                  <input type="text" name="fname" placeholder="Enter Your First Name" />
                 </div>
                 <div>
                   <label htmlFor="">Last Name</label>
-                  <input type="text" placeholder="Enter Your Last Name" />
+                  <input type="text" name="lname" placeholder="Enter Your Last Name" />
                 </div>
               </div>
               <div>
                 <label htmlFor="">Email</label>
-                <input type="email" placeholder="Enter Your Email" />
+                <input type="email" name="email" placeholder="Enter Your Email" />
               </div>
               <div>
                 <label htmlFor="">Company Name</label>
-                <input type="number" placeholder="Enter Your Company Name" />
+                <input type="number" name="phone" placeholder="Enter Your Company Name" />
               </div>
               <div>
                 <label htmlFor="">Product Name</label>
-                <input type="text" placeholder="Enter Your Product Name" />
+                <input type="text" name="productName" placeholder="Enter Your Product Name" />
               </div>
               <div>
                 <label htmlFor="">Product Number</label>
-                <input type="text" placeholder="Enter Your Product Number" />
+                <input type="text" name="productNumber" placeholder="Enter Your Product Number" />
               </div>
               <div>
                 <label htmlFor="">Comment Or Message</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Comment"></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Enter Your Comment"></textarea>
               </div>
               <div>
-                <button> Send Message <i className="fa-solid fa-paper-plane"></i></button>
+                <button type="submit"> Send Message <i className="fa-solid fa-paper-plane"></i></button>
               </div>
             </form>
           </div>
