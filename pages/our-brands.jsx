@@ -125,6 +125,7 @@ const Brands = () => {
           <div className="logoImages">
             {imgArray.map((v, i) => (
               <img
+                key={i}
                 src={v.img}
                 alt="Branding logos"
                 onMouseEnter={() => setHoverState(i)}
