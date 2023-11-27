@@ -1,7 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const contact = () => {
-  const [openmodel, setOpenmodel] = useState(true);
+  const [openmodel, setOpenmodel] = useState(false);
+
+  useEffect(() => {
+    if (openmodel) {
+      window.document.body.style.overflow = "hidden";
+    } else {
+      window.document.body.style.overflow = "visible";
+    }
+  }, [openmodel]);
+
   return (
     <>
       <div className="contact">
@@ -36,16 +45,17 @@ const contact = () => {
           </div>
         </div>
       </div>
-      <div className="contactmodel">
-        <div className={openmodel ? "contactopenmodel" : "closecontectmodel"}>
+
+
+      <div className= {openmodel ? "contactmodel open" : "contactmodel" }>
+        <div className="contactopenmodel">
           <div className="contact-cross">
             <i
               onClick={() => setOpenmodel(false)}
-              className="fa-solid fa-trash"
+              className="fa-solid fa-xmark"
             ></i>
           </div>
           <div className="contactform">
-            <h2>Contact Us</h2>
             <form action="">
               <div className="naming-div">
                 <div>
@@ -75,10 +85,19 @@ const contact = () => {
               </div>
               <div>
                 <label htmlFor="">Comment Or Message</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Comment"></textarea>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  
+                  placeholder="Enter Your Comment"
+                ></textarea>
               </div>
               <div>
-                <button> Send Message <i className="fa-solid fa-paper-plane"></i></button>
+                <button>
+                  {" "}
+                  Send Message <i className="fa-solid fa-paper-plane"></i>
+                </button>
               </div>
             </form>
           </div>

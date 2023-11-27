@@ -1,0 +1,106 @@
+.brandsParentDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  height: 100vh;
+
+
+}
+
+.BrandsImages {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  min-height: 50vh;
+}
+
+.BrandsImages img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: 0.5s all ease-in-out;
+
+  animation: scale 0.1s linear;
+}
+
+@keyframes scale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+.brandContent h3 {
+  font-size: clamp(1.5625rem, 1.375rem + 1vw, 2.375rem);
+  text-align: center;
+  font-weight: 300;
+}
+
+.logoImages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 20px;
+  padding: 0 30px;
+  place-items: center;
+}
+
+.logoImages img {
+  height: auto;
+  transition: 0.3s all ease-in-out;
+  max-width: 70%;
+}
+
+.logoImages img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .brandsParentDiv {
+    grid-template-columns: 1fr;
+  }
+
+  .logoImages img {
+    max-width: 100%;
+  }
+
+  .logoImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    padding: 0 30px;
+
+    gap: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logoImages {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.storeLogos {
+  width: 100%;
+  height: 100%;
+  padding: 0 30px;
+}
+
+.storeLogos img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.storeImages {
+  width: 100%;
+  height: auto;
+  /* height: 100vh; */
+}
+
+.storeImages img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

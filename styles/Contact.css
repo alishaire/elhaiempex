@@ -41,31 +41,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  left: -100%;
+  transition: 0.4s all ease-in-out;
+  height: 100%;
+  padding: 10px 10px;
+
+  backdrop-filter: blur(10px);
 }
+
+.contactmodel.open {
+  left: 0;
+}
+
 .contactopenmodel {
-  position: absolute;
-  top: 10px;
-  width: 90%;
-  min-height: 90vh;
+  max-height: 100%;
   background-color: white;
   transition: all 0.3s linear;
+  border-radius: 20px;
 }
-.closecontectmodel {
-  position: absolute;
-  top: -100%;
-  width: 90%;
-  min-height: 90vh;
-  background-color: white;
-  transition: all 0.3s linear;
-  pointer-events: all;
-}
+
 .contact-cross {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 10px;
 }
-.contact-cross .fa-trash {
+.contact-cross .fa-xmark {
   background-color: red;
   height: 30px;
   width: 30px;
@@ -79,8 +85,7 @@
 .contactform {
   max-width: 1300px;
   margin: auto;
-  border: 1px solid #9c9c9c;
-  padding: 10px;
+  padding: 20px 30px;
 }
 .contactform h2 {
   text-align: center;
@@ -98,13 +103,23 @@
   width: 100%;
   border-radius: 0.25rem;
   padding: 7px 14px;
-  border: 1px solid rgb(128, 128, 128);
+  border: 1px solid rgb(220, 219, 219);
+  transition: 0.3s all ease-in-out;
 }
+
+.contactform form div input:focus {
+  outline: none;
+  border: 1px solid rgb(71, 71, 109);
+}
+
 .contactform form div label {
-  display: block;
+  display: inline-block;
   width: 100%;
   margin: 5px;
   font-size: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0;
 }
 .contactform form div button {
   padding: 7px 14px;
