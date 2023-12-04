@@ -4,7 +4,7 @@ import React from "react";
 const manfacturing = () => {
   return (
     <>
-      {/* <div className="manfacturing">
+      <div className="manfacturing">
     
         <div className="man-grid-waving">
           <div className="manficbgimg waving"></div>
@@ -74,8 +74,8 @@ const manfacturing = () => {
           </div>
           <div className="manficbgimg Stitching"></div>
         </div>
-      </div> */}
-      <h1>Heading Manfacrature</h1>
+      </div>
+      
     </>
   );
 };
