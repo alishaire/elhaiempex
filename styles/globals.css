@@ -7,7 +7,6 @@
 }
 
 
-.maxpad{
-
-  padding: 50px 15px;
+p{
+  font-size: clamp(0.8125rem, 0.7917rem + 0.1111vw, 0.875rem) !important;
 }
