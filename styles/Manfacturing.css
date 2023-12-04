@@ -1,0 +1,65 @@
+.manfacturing {
+  margin-top: 60px;
+}
+.man-grid-waving,
+.man-grid-Dyeing,
+.man-grid-Processing,
+.man-grid-Stitching {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: dense;
+}
+.waving {
+  background-image: url(../public/images/waving.jpeg);
+}
+.Dyeing {
+  background-image: url(../public/images/dyeing.jpeg);
+}
+.Processing {
+  background-image: url(../public/images/Processing.jpeg);
+}
+.Stitching {
+  background-image: url(../public/images/Stitching.jpeg);
+}
+.manficbgimg {
+  min-height: 25vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.manfccontent {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+.manfccontent h2{
+    font-weight: 400;
+}
+.manfccontent p {
+  color: rgb(121, 121, 121);
+  font-size: 14px;
+}
+.manfccontent div {
+  margin-top: 30px;
+}
+.manfccontent a {
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 650px) {
+    .man-grid-waving,
+    .man-grid-Dyeing,
+    .man-grid-Processing,
+    .man-grid-Stitching {
+ 
+      grid-template-columns: 1fr;
+    
+    }
+    .man-grid-Dyeing .manficbgimg{
+        grid-row: 1;
+    }
+    .man-grid-Stitching .manficbgimg{
+        grid-row: 1;
+    }
+}
