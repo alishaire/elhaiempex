@@ -1,5 +1,7 @@
 import React from "react";
 
+import CountUp from "react-countup";
+
 const About = () => {
   return (
     <>
@@ -9,34 +11,90 @@ const About = () => {
           <div className="aboutcontent">
             <h1>About</h1>
             <p>
-              Founded in 1993, Pem-America, Inc. is now one of America’s fastest
-              growing Home Textile providers. We company began with the
-              production of quilts and has since expanded to include more than
-              50 product lines, distributed through nearly 40 major retailers.
-              As a long-term strategic partner, Pem-America’s innovative product
-              development and creative teams are focused on the creation of
-              impactful private label and branded products, available at key
-              price points. <br /> <br />
-              Pem-America’s corporate office is in the heart of New York City,
-              and operates from multiple distribution centers throughout the
-              United States, thus accommodating business needs of all sizes.
-              Pem-America has exceptional global sourcing and manufacturing
-              capabilities, which allow us to be nimble and respond to ever
-              changing world events, while offering consistent quality and
-              value. Pem-America is continually seeking ways to be more
-              innovative, which includes an increased focus on eco-conscious
-              practices and products.
+              Elahi Impex corporate office is in Faisalabad the City of Textile,
+              is now one of Pakistan’s fastest growing Home Textile providers.
+              We company began with the weaving unit and has since expanded to
+              home made ups. We Explore a world of textures, colors, and
+              patterns as you browse through our exquisite bed and bath linen.
+              Our commitment to using the finest materials ensures durability,
+              breathability, and a touch of opulence that transforms your
+              bedroom and bathroom into a sanctuary of relaxation. Immerse
+              yourself in the luxury, where every product is a testament to our
+              dedication to creating a haven of comfort in your home. Indulge in
+              the elegance of our bed sheets, fitted sheets, and towels – an
+              embodiment of sophistication and comfort that transcends the
+              ordinary.
+              <br /><br />
+               Welcome to a world where quality meets style, and
+              relaxation is an art form. Welcome to Elahi Impex where we
+              redefine the way you experience the comfort of home. We are
+              specialized in White bedding for Hotel and Hospitals with the
+              premium quality and luxury hand feel. That has all the elements of
+              sustainability innovation and eco friendly as well.
             </p>
-            <ul>
-                <li>Rugs</li>
-                <li>Kitchen</li>
-                <li>Cold Weather</li>
-                <li>Utility Bedding</li>
-                <li>Fashion Bedding</li>
-                <li>Bath Accessories</li>
-                <li>Window Treatments</li>
-                <li>Bath & Beach Towels</li>
-            </ul>
+            <div className="productsdiv">
+              <div className="items">
+                <i class="fa-solid fa-vest-patches"></i>
+                <span>Lab Coat</span>
+              </div>
+              <div className="items">
+                <i class="fa-solid fa-mitten"></i>
+                <span>Kitchen Linen</span>
+              </div>
+              <div className="items">
+                <i class="fas fa-tools"></i>
+                <span>Utility Bedding </span>
+              </div>
+              <div className="items">
+                <i class="fa-solid fa-bath"></i>
+                <span>Bath Accessories</span>
+              </div>
+              <div className="items">
+                <i class="bx bxs-hard-hat"></i>
+                <span>Window Treatments</span>
+              </div>
+              <div className="items">
+                <i class="fa-solid fa-toilet-paper"></i>
+                <span>Bath & beach Towels</span>
+              </div>
+            </div>
+
+            <div className="counterDiv">
+              <div className="counterItems">
+                <h4>Power looms</h4>
+                <CountUp start={0} end={100} delay={0}>
+                  {({ countUpRef }) => (
+                    <div>
+                      <span ref={countUpRef} />
+                      <span>+</span>
+                    </div>
+                  )}
+                </CountUp>
+              </div>
+              <div className="counterItems">
+                <h4>Shuttless looms</h4>
+                <CountUp start={0} end={125} delay={0}>
+                  {({ countUpRef }) => (
+                    <div>
+                      <span ref={countUpRef} />
+                      <span>+</span>
+                    </div>
+                  )}
+                </CountUp>
+              </div>
+              <div className="counterItems">
+                <h4>Stitching machine</h4>
+
+                <CountUp start={0} end={325} delay={0}>
+                  {({ countUpRef }) => (
+                    <div>
+                      <span ref={countUpRef} />
+                      <span>+</span>
+                    </div>
+                  )}
+                </CountUp>
+              </div>
+            </div>
           </div>
         </div>
       </div>

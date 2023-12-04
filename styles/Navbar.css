@@ -1,12 +1,18 @@
 .navbar {
   background-color: #888c;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
   box-shadow: 0 10px 50px -2px rgba(0, 0, 0, 0.14);
   position: fixed;
   top: 0;
-  z-index: 9999;
+  z-index: 999;
   width: 100%;
 }
+
+.home{
+  background-color: transparent !important;
+  backdrop-filter: blur(10px) !important;
+}
+
 .navbar nav {
   max-width: 1200px;
   margin: auto;
@@ -58,10 +64,34 @@ opacity: 1;
   color: white;
   text-decoration: none;
   transition: 0.3s;
+
 }
-.navbar nav ul li a:hover {
-  color: rgb(0, 255, 0);
+
+
+
+.navbar nav ul li a::after{
+  content: "";
+  position: absolute;
+  border: 1px solid transparent;
+  height: 0.3px;
+    bottom: 5px;
+  left: 15px;
+  width: 0%;
+  transition: 0.3s all ease-in-out;
 }
+
+.navbar nav ul li a:hover::after{
+  /* content: "";
+  position: absolute; */
+  /* border: 1px solid white; */
+  height: 0.3px;
+  background-color: white;
+  /* bottom: 5px;
+  left: 15px; */
+  width: 70%;
+}
+
+
 
 .bars {
   font-size: 25px;

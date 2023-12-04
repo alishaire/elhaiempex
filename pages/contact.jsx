@@ -1,24 +1,30 @@
 import React, { useEffect, useRef, useState } from "react";
-import emailjs from '@emailjs/browser';
-
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [openmodel, setOpenmodel] = useState(false);
-
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_4hzwrg6', 'template_xea43tt', form.current, 'CYeyoykc_ssRA-91-')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_4hzwrg6",
+        "template_xea43tt",
+        form.current,
+        "CYeyoykc_ssRA-91-"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
-
 
   useEffect(() => {
     if (openmodel) {
@@ -63,60 +69,88 @@ const Contact = () => {
         </div>
       </div>
 
+      <div className={openmodel ? "contactmodel open" : "contactmodel"}>
+        <div
+          className={openmodel ? "contactopenmodel open" : "contactopenmodel"}
+        >
+          <div className="outerDiv">
+            <div className="contact-cross">
+              <i
+                onClick={() => setOpenmodel(false)}
+                className="fa-solid fa-xmark"
+              ></i>
 
-      <div className= {openmodel ? "contactmodel open" : "contactmodel" }>
-        <div className="contactopenmodel">
-          <div className="contact-cross">
-            <i
-              onClick={() => setOpenmodel(false)}
-              className="fa-solid fa-xmark"
-            ></i>
-          </div>
-          <div className="contactform">
-            <form action="" ref={form} onSubmit={sendEmail}>
-              <div className="naming-div">
-                <div>
-                  <label htmlFor=""> First Name</label>
-                  <input type="text" name="fname" placeholder="Enter Your First Name" />
+              <span>Get In Touch!!</span>
+            </div>
+            <div className="contactform">
+              <form action="" ref={form} onSubmit={sendEmail}>
+                <div className="naming-div">
+                  <div className="formParent">
+                    <input
+                      type="text"
+                      name="fname"
+                      placeholder="Enter Your First Name"
+                    />
+                    <i class="bx bx-user-pin"></i>
+                  </div>
+                  <div className="formParent">
+                    <input
+                      type="text"
+                      name="lname"
+                      placeholder="Enter Your Last Name"
+                    />
+                    <i class="bx bx-user-pin"></i>
+                  </div>
+                </div>
+                <div className="formParent">
+                  {/* <label htmlFor="">Email</label> */}
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter Your Email"
+                  />
+                  <i class="bx bx-user-pin"></i>
+                </div>
+                <div className="formParent">
+                  <input
+                    type="number"
+                    name="phone"
+                    placeholder="Enter Your Company Name"
+                  />
+                  <i class="bx bx-building-house"></i>
+                </div>
+                <div className="formParent">
+                  <input
+                    type="text"
+                    name="productName"
+                    placeholder="Enter Your Product Name"
+                  />
+                  <i class="bx bx-cart-download"></i>
+                </div>
+                <div className="formParent">
+                  <input
+                    type="text"
+                    name="productNumber"
+                    placeholder="Enter Your Product Number"
+                  />
+                  <i class="bx bx-phone"></i>
                 </div>
                 <div>
-                  <label htmlFor="">Last Name</label>
-                  <input type="text" name="lname" placeholder="Enter Your Last Name" />
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    placeholder="Enter Your Comment"
+                  ></textarea>
                 </div>
-              </div>
-              <div>
-                <label htmlFor="">Email</label>
-                <input type="email" name="email" placeholder="Enter Your Email" />
-              </div>
-              <div>
-                <label htmlFor="">Company Name</label>
-                <input type="number" name="phone" placeholder="Enter Your Company Name" />
-              </div>
-              <div>
-                <label htmlFor="">Product Name</label>
-                <input type="text" name="productName" placeholder="Enter Your Product Name" />
-              </div>
-              <div>
-                <label htmlFor="">Product Number</label>
-                <input type="text" name="productNumber" placeholder="Enter Your Product Number" />
-              </div>
-              <div>
-                <label htmlFor="">Comment Or Message</label>
-                <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  
-                  placeholder="Enter Your Comment"
-                ></textarea>
-              </div>
-              <div>
-                <button>
-                  {" "}
-                  Send Message <i className="fa-solid fa-paper-plane"></i>
-                </button>
-              </div>
-            </form>
+                <div>
+                  <button>
+                    {" "}
+                    Send Message <i className="fa-solid fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -124,4 +158,4 @@ const Contact = () => {
   );
 };
 
-export default Contact
+export default Contact;

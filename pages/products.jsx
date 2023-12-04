@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Galleria } from "primereact/galleria";
 const Products = () => {
   const [openmodel, setOpenmodel] = useState(false);
@@ -11,31 +11,31 @@ const Products = () => {
   }, [openmodel]);
   const sliderImages = [
     {
-      name: "Fashion Bedding",
+      name: "Kitchen Linen",
       pic: "https://pemamerica.com/wp-content/uploads/2020/08/CharismaMelangeVelvetCS-1-300x253.jpg",
     },
 
     {
-      name: "Utility",
+      name: "Lab Coat",
       pic: "https://pemamerica.com/wp-content/uploads/2020/08/Cannon_ClassicCotton_MP_HERO-300x262.jpg",
     },
 
     {
-      name: "Sheets",
+      name: "Utility Bedding",
       pic: "https://pemamerica.com/wp-content/uploads/2020/08/Cannon_Heritage_SS_STACK3-245x300.jpg",
     },
 
     {
-      name: "Decor",
+      name: "Bath Accessories",
       pic: "https://pemamerica.com/wp-content/uploads/2020/08/Printed-Decorative-Pillow-300x251.jpg",
     },
 
     {
-      name: "Window",
+      name: "Window Treatments",
       pic: "https://pemamerica.com/wp-content/uploads/2020/08/BM_2PkWindowPanels_BrightWhite-SilverBrooches-300x300.jpg",
     },
     {
-      name: "Bath",
+      name: "Bath & beach Towels",
       pic: "https://pemamerica.com/wp-content/uploads/2020/08/RWBFields_Americana_TS_Blue_HERO-300x251.jpg",
     },
   ];
@@ -43,59 +43,55 @@ const Products = () => {
     getData() {
       return [
         {
-          itemImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria1.jpg",
-          thumbnailImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria1s.jpg",
+          itemImageSrc: "/products/kitchen-1.webp",
+          thumbnailImageSrc: "/products/kitchen-1.webp",
           alt: "Description for Image 1",
           title: "Title 1",
-          name: "Fashion Bedding",
+          name: "Kitchen Linen",
         },
         {
-          itemImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria2.jpg",
-          thumbnailImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria2s.jpg",
+          itemImageSrc: "/products/kitchen-2.jpeg",
+          thumbnailImageSrc: "/products/kitchen-2.jpeg",
           alt: "Description for Image 2",
           title: "Title 2",
-          name: "Fashion Bedding",
+          name: "Kitchen Linen",
         },
         {
           itemImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria3.jpg",
+            "https://img.freepik.com/free-photo/blue-platter-popcorn-candy-neatly-folded-towel-line-flowers-marble-table_114579-56535.jpg?size=626&ext=jpg&ga=GA1.1.1839979533.1700575049&semt=ais",
           thumbnailImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria3s.jpg",
+            "https://img.freepik.com/free-photo/blue-platter-popcorn-candy-neatly-folded-towel-line-flowers-marble-table_114579-56535.jpg?size=626&ext=jpg&ga=GA1.1.1839979533.1700575049&semt=ais",
           alt: "Description for Image 3",
           title: "Title 3",
-          name: "Fashion Bedding",
+          name: "Kitchen Linen",
         },
         {
-          itemImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria4.jpg",
-          thumbnailImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria4s.jpg",
+          itemImageSrc: "/products/kitchen-4.jpg",
+          thumbnailImageSrc: "/products/kitchen-4.jpg",
           alt: "Description for Image 4",
           title: "Title 4",
-          name: "Utility",
+          name: "Kitchen Linen",
         },
         {
           itemImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria5.jpg",
+            "https://img.freepik.com/free-photo/folded-napkin-wooden-table_1373-67.jpg?size=626&ext=jpg&ga=GA1.1.1839979533.1700575049&semt=ais",
           thumbnailImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria5s.jpg",
+            "https://img.freepik.com/free-photo/folded-napkin-wooden-table_1373-67.jpg?size=626&ext=jpg&ga=GA1.1.1839979533.1700575049&semt=ais",
           alt: "Description for Image 5",
           title: "Title 5",
-          name: "Utility",
+          name: "Kitchen Linen",
         },
         {
           itemImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria6.jpg",
+            "https://img.freepik.com/free-photo/bath-towel_1203-3129.jpg?w=826&t=st=1701693303~exp=1701693903~hmac=d64bb478409ea1ed43c0e5d63ff6dc2e4d8d5abe7a6890443870cd3edb6a461b",
           thumbnailImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria6s.jpg",
+            "https://img.freepik.com/free-photo/bath-towel_1203-3129.jpg?w=826&t=st=1701693303~exp=1701693903~hmac=d64bb478409ea1ed43c0e5d63ff6dc2e4d8d5abe7a6890443870cd3edb6a461b",
           alt: "Description for Image 6",
           title: "Title 6",
-          name: "Utility",
+          name: "Kitchen Linen",
         },
+        // ------
+
         {
           itemImageSrc:
             "https://primefaces.org/cdn/primereact/images/galleria/galleria7.jpg",
@@ -185,8 +181,8 @@ const Products = () => {
     },
   };
 
-
   const [images, setImages] = useState([]);
+  const galleria = useRef(null);
 
   const responsiveOptions = [
     {
@@ -214,7 +210,18 @@ const Products = () => {
   };
 
   const thumbnailTemplate = (item) => {
-    return <img src={item.thumbnailImageSrc} alt={item.alt} />;
+    return (
+      <img
+        src={item.thumbnailImageSrc}
+        style={{
+          maxWidth: "100px",
+          marginTop: "10px",
+          minHeight: "70px",
+          objectFit: "cover",
+        }}
+        alt={item.alt}
+      />
+    );
   };
 
   const [filteredImages, setFilteredImages] = useState([]);
@@ -230,7 +237,7 @@ const Products = () => {
 
   return (
     <div>
-      <div className="productsParent maxpad">
+      <div className="productsParent">
         <div className="mainProducts">
           <h3>Product Lines</h3>
           <div className="productsItem">
@@ -253,19 +260,18 @@ const Products = () => {
           />
         </div>
       </div>
-      <div className={openmodel ? "contactmodel open" : "contactmodel"}>
-        <div className="contactopenmodel">
-          <div style={{ background: "transparent" }} className="contact-cross">
-            <i
-              onClick={() => setOpenmodel(false)}
-              className="fa-solid fa-xmark"
-            ></i>
-          </div>
+
+      <div className={openmodel ? "imagesMainModel open" : "imagesMainModel"}>
+        <i
+          onClick={() => setOpenmodel(false)}
+          className="fa-solid fa-xmark closemodel"
+        ></i>
+        <div className="imagesChildDiv">
           <Galleria
             value={filteredImages}
+            className="gallery"
             responsiveOptions={responsiveOptions}
             numVisible={5}
-            style={{ maxWidth: "640px" }}
             item={itemTemplate}
             thumbnail={thumbnailTemplate}
             showItemNavigators

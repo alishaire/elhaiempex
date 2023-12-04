@@ -1,35 +1,110 @@
-.aboutmain{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    min-height: 100vh;
-    background-color: #E7E6E6;
+.aboutmain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  min-height: 100vh;
+  background-color: #e7e6e6;
 }
-.aboutimg{
-    background-image: url("https://pemamerica.com/wp-content/uploads/2020/07/London-Fog.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 100vh;
+.aboutimg {
+  background-image: url("https://pemamerica.com/wp-content/uploads/2020/07/London-Fog.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
 }
-.aboutcontent{
-    padding: 30px;
-  
+.aboutcontent {
+  padding: 60px 20px 0 20px;
 }
-.aboutcontent h1{
-font-weight: 500;
+.aboutcontent h1 {
+  font-weight: 500;
 }
 .aboutcontent ul {
-    
-    padding: 30px;
+  padding: 30px;
+}
+.aboutcontent ul li {
+  margin-top: 10px;
+}
 
+.productsdiv {
+  margin: 30px 0;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-.aboutcontent ul li{
-    margin-top: 10px;
+
+.items {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
 }
-@media (max-width:800px) {
-    .aboutmain{
-        grid-template-columns: 1fr;
-    }
+.items span {
+  font-size: 14px;
+}
+
+.items i {
+  color: gray;
+}
+
+.counterDiv {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  padding: 40px 15px;
+}
+
+.counterItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+
+  border-radius: 10px;
+}
+
+.counterItems h4 {
+  font-weight: 500;
+  font-size: 15px;
+  color: gray;
+}
+
+.counterItems span {
+  color: gray;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+@media (max-width: 1113px) {
+  .productsdiv {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .counterDiv {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .aboutmain {
+    grid-template-columns: 1fr;
+  }
+  .counterDiv {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .counterDiv {
+    grid-template-columns: 1fr;
+  }
+  .productsdiv {
+    grid-template-columns: 1fr;
+  }
 }

@@ -2,10 +2,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+  height: 100vh;
 }
 .featuredProduct {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .featuredProduct img {
@@ -41,9 +43,9 @@
 
 .mainProducts h3 {
   text-align: center;
-  font-size: 30px;
-  font-weight: 400;
-  padding: 30px 15px;
+  font-size: clamp(1.5625rem, 1.4583rem + 0.5556vw, 1.875rem);
+  font-weight: 500;
+  padding: 70px 15px 30px 15px;
 }
 
 @media (max-width: 1024px) {
@@ -61,4 +63,54 @@
   .productsItem {
     grid-template-columns: 1fr;
   }
+}
+
+.imagesMainModel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: -100%;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  transition: 0.3s all ease-in-out;
+  height: 100%;
+  padding: 10px 10px;
+  transform: scale(0.03);
+  z-index: 999999;
+
+  background-color: rgba(0, 0, 0, 0.923);
+  backdrop-filter: blur(4px);
+}
+
+.imagesMainModel.open {
+  top: 0%;
+  transform: scale(1);
+}
+
+.imagesChildDiv {
+  height: fit-content;
+  transition: all 0.3s linear;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 800px;
+  /* border: 10px solid white; */
+  transform: scale(1);
+  transition: 0.6 all ease-in-out;
+}
+
+
+.gallery {
+  width: 100%;
+  height: 30%;
+}
+
+.closemodel {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
 }

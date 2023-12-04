@@ -42,44 +42,66 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  overflow: scroll;
-  top: 0;
+  top: -100%;
   bottom: 0;
   width: 100%;
-  left: -100%;
-  transition: 0.4s all ease-in-out;
+  left: 0;
+  transition: 0.7s all ease-in-out;
   height: 100%;
   padding: 10px 10px;
 
-  backdrop-filter: blur(10px);
+  z-index: 999999;
+
+  background-color: rgba(0, 0, 0, 0.666);
+  backdrop-filter: blur(4px);
 }
 
 .contactmodel.open {
-  left: 0;
+  top: 0%;
 }
 
 .contactopenmodel {
-  max-height: 100%;
-  background-color: white;
+  height: 100%;
+  max-height: 650px;
+  background-color: #e7e6e6;
+  /* background-color: white; */
   transition: all 0.3s linear;
   border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  border: 10px solid white;
+  transform: scale(0.02);
+  transition: 0.6 all ease-in-out;
+}
+.contactopenmodel.open {
+  transform: scale(1);
 }
 
 .contact-cross {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 40px;
 }
+
+.contact-cross span {
+  /* border: 1px solid red; */
+  padding: 1px 10px;
+  color: gray;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: white;
+}
+
 .contact-cross .fa-xmark {
-  background-color: red;
   height: 30px;
   width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  color: white;
+  color: #4f4f4f;
   cursor: pointer;
 }
 .contactform {
@@ -91,25 +113,22 @@
   text-align: center;
   font-weight: 500;
 }
-.naming-div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
 
 .contactform form div input,
 .contactform form div textarea {
   display: block;
   width: 100%;
-  border-radius: 0.25rem;
   padding: 7px 14px;
-  border: 1px solid rgb(220, 219, 219);
+  border: none;
+  border-bottom: 1px solid rgb(143, 143, 143);
+  background-color: transparent;
   transition: 0.3s all ease-in-out;
 }
 
 .contactform form div input:focus {
   outline: none;
-  border: 1px solid rgb(71, 71, 109);
+  border: none;
+  border-bottom: 1px solid rgb(59, 59, 59);
 }
 
 .contactform form div label {
@@ -133,8 +152,18 @@
   .maincontact {
     grid-template-columns: 1fr;
   }
-  .contactopenmodel {
-    top: 90vh;
-    transition: all 0.5s linear;
-  }
+}
+
+.formParent {
+  width: 100%;
+  position: relative;
+  margin: 30px 0;
+}
+
+.formParent i {
+  position: absolute;
+  top: 20%;
+  right: 10px;
+  font-size: 23px;
+  color: gray;
 }
