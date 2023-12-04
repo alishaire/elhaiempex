@@ -16,8 +16,8 @@ const manfacturing = () => {
               . We are exporting Grey ,Bleached, Dyed, Printed Fabrics and Made
               Ups. Elahi Impex is equipped with modern computerize machines. The
               main plant and equipment installed in the weaving mills is as
-              following Sulzer 130",80 Looms | Suttless 110" 40 Looms | suttless
-              85" 80 Looms | Auto 112" 60" | Power 120" 100Looms.
+              following Sulzer 130,80 Looms | Suttless 110, 40 Looms | suttless
+              85, 80 Looms | Auto 112, 60 | Power 120, 100Looms.
             </p>
             <div>
               <Link href="/contact">Add Inquery</Link>
