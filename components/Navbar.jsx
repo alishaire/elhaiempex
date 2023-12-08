@@ -13,8 +13,8 @@ const Navbar = () => {
         <div className="logo">
           <img src="/images/logo.png" alt="Elahi Empex" />
         </div>
-
-        <ul className={mobileNavOpen ? "active" : ""}>
+<section className={mobileNavOpen ? "mobilenav" :""} onClick={()=>setMobileNavOpen(false)}>
+<ul className={mobileNavOpen ? "active" : ""}>
           <li>
             <Link href="/">
               <img src="/images/logo.png" alt="" />
@@ -32,16 +32,16 @@ const Navbar = () => {
           <li>
             <Link href="/products">Products</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/team">Team</Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/manfacturing">Manfacturing</Link>
           </li>
 
           <li>
-            <Link href="#">Brands</Link>
-            <ul className="dropdown">
+            <Link href="/our-brands">Brands</Link>
+            {/* <ul className="dropdown">
               <li>
                 <Link href="/our-brand"></Link>
               </li>
@@ -49,15 +49,12 @@ const Navbar = () => {
               <li>
                 <Link href="/our-brands">Our Brand</Link>
               </li>
-              {/* <li>
-                <Link href="/licensed-brands">Licensed Brands</Link>
-              </li>
-              <li>
-                <Link href="/store-brands">Store Brands</Link>
-              </li> */}
-            </ul>
+         
+            </ul> */}
           </li>
         </ul>
+</section>
+       
 
         <div onClick={() => setMobileNavOpen(!mobileNavOpen)} className="bars">
           <i className={`bx bx-${mobileNavOpen ? "x" : "menu"}`}></i>

@@ -71,8 +71,10 @@ const About = () => {
                   )}
                 </CountUp>
               </div>
+          
               <div className="counterItems">
-                <h4>Shuttless looms</h4>
+                <h4>Stitching machine</h4>
+
                 <CountUp start={0} end={125} delay={0}>
                   {({ countUpRef }) => (
                     <div>
@@ -83,8 +85,7 @@ const About = () => {
                 </CountUp>
               </div>
               <div className="counterItems">
-                <h4>Stitching machine</h4>
-
+                <h4>Shuttless looms</h4>
                 <CountUp start={0} end={325} delay={0}>
                   {({ countUpRef }) => (
                     <div>
