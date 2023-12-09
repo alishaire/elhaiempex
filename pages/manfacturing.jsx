@@ -4,78 +4,96 @@ import React from "react";
 const manfacturing = () => {
   return (
     <>
-      <div className="manfacturing">
-    
-        <div className="man-grid-waving">
-          <div className="manficbgimg waving"></div>
-          <div className="manfccontent">
-            <h2>Weaving</h2>
-            <p>
-              Elahi Impex is a vertically integrated unit having a weaving
-              capacity of around 12 lacks meters per month (in different weave)
-              . We are exporting Grey ,Bleached, Dyed, Printed Fabrics and Made
-              Ups. Elahi Impex is equipped with modern computerize machines. The
-              main plant and equipment installed in the weaving mills is as
-              following Sulzer 130,80 Looms | Suttless 110, 40 Looms | suttless
-              85, 80 Looms | Auto 112, 60 | Power 120, 100Looms.
-            </p>
-            <div>
-              <Link href="/contact">Add Inquery</Link>
+      <div className="parent">
+        <div className="manfacturing">
+          <div className="man-grid-waving">
+            <div className="manficbgimg waving"></div>
+            <div className="manfccontent">
+              <h2>Weaving</h2>
+              <p>
+                Elahi Impex, a vertically integrated weaving powerhouse,
+                showcases a monthly weaving capacity of 1.2 million meters
+                across various weaves, producing Grey, Bleached, Dyed, Printed
+                Fabrics, and Made Ups. Our state-of-the-art weaving mills are
+                equipped with modern computerized machines, including Shuttless
+                300 looms, Auto 80 & Power 100. This diverse loom portfolio
+                ensures precision and efficiency in our textile production.
+                Renowned for our global exports, Elahi Impex combines
+                traditional craftsmanship with cutting-edge technology,
+                delivering textiles that embody excellence and innovation in
+                every woven thread.
+              </p>
+              <div>
+                <Link href="/contact">Add Inquery</Link>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="man-grid-Dyeing">
-          <div className="manfccontent">
-            <h2>Dyeing</h2>
-            <p>
-              We have complete facilities for dyeing house including latest
-              machinery from THEIS GERMANY for optimum quality such as Soft
-              Flows (H.T) & Closed Winches. The bleaching process involves a
-              series of steps to ensure exact color matching and a color fast
-              process, including washing, dyeing and drying. For Drying we have
-              tumble dryers from This which ensure continuous tumbling & drying.
-              This process ensures improved quality, better handling, good pile
-              and controls shrinkage.
-            </p>
-            <div>
-              <Link href="/contact">Add Inquery</Link>
+          <div className="man-grid-Dyeing">
+            <div className="manfccontent">
+              <h2>Dyeing</h2>
+              <p>
+                Elahi Impex is equipped with comprehensive dyeing facilities,
+                featuring state-of-the-art machinery sourced from THEIS GERMANY,
+                including Soft Flows (H.T) and Closed Winches, ensuring optimal
+                quality in every aspect. Our meticulous bleaching process
+                involves a series of precise steps to guarantee exact color
+                matching and color-fast results. This process encompasses
+                washing, dyeing, and drying, with tumble dryers from This,
+                ensuring a seamless combination of continuous tumbling and
+                drying. This meticulous approach not only enhances overall
+                quality but also ensures better handling, a refined pile, and
+                controlled shrinkage, setting new standards in textile dyeing.
+              </p>
+              <div>
+                <Link href="/contact">Add Inquery</Link>
+              </div>
+            </div>
+            <div className=" manficbgimg Dyeing"></div>
+          </div>
+          <div className="man-grid-Processing">
+            <div className="manficbgimg Processing"></div>
+            <div className="manfccontent">
+              <h2>Processing</h2>
+              <p>
+                Elahi Impex boasts comprehensive arrangements for all modes of
+                textile processing and printing, including both rotary and panel
+                methods. We collaborate with high-quality standard processing
+                units to ensure the excellence of our products. Throughout the
+                entire production journey, from inception to completion, our
+                dedicated team of specialized quality control personnel
+                meticulously oversees every aspect, affirming that the quality
+                of our goods meets the highest standards. At Elahi Impex, our
+                commitment to quality is unwavering, ensuring that each product
+                reflects our dedication to excellence in textile processing.
+              </p>
+              <div>
+                <Link href="/contact">Add Inquery</Link>
+              </div>
             </div>
           </div>
-          <div className=" manficbgimg Dyeing"></div>
-        </div>
-        <div className="man-grid-Processing">
-          <div className="manficbgimg Processing"></div>
-          <div className="manfccontent">
-            <h2>Processing</h2>
-            <p>
-              Elahi Impex have arrangements all modes of processing and printing
-              (rotary/panel). We outsource our processing from units of high
-              quality standards. We do have specialized quality control
-              personnel to keep a check on quality of goods right from the
-              beginning till the end.
-            </p>
-            <div>
-              <Link href="/contact">Add Inquery</Link>
+          <div className="man-grid-Stitching">
+            <div className="manfccontent">
+              <h2>Stitching</h2>
+              <p>
+                Elahi Impex prides itself on its advanced stitching
+                capabilities, featuring the latest modern stitching machines
+                operated by highly skilled labor to cater to contemporary
+                stitching demands. Our machinery lineup encompasses Singer,
+                Safety + Overlock, Double Needle, Kansai Special, and Flatlock
+                machines, ensuring a seamless blend of traditional craftsmanship
+                with cutting-edge technology. From intricate details to durable
+                seams, our skilled team and state-of-the-art machines guarantee
+                precision and quality in every stitch, reflecting our commitment
+                to excellence in textile manufacturing.
+              </p>
+              <div>
+                <Link href="/contact">Add Inquery</Link>
+              </div>
             </div>
+            <div className="manficbgimg Stitching"></div>
           </div>
-        </div>
-        <div className="man-grid-Stitching">
-          <div className="manfccontent">
-            <h2>Stitching</h2>
-            <p>
-              At Elahi Impex, we are equipped with latest and modern stitching
-              machines a highly skilled labor to meet our modern stitching
-              requirements. The machines include Singer, Safety + Over lock,
-              Double needle, Kansai special and Flat lock machines.
-            </p>
-            <div>
-              <Link href="/contact">Add Inquery</Link>
-            </div>
-          </div>
-          <div className="manficbgimg Stitching"></div>
         </div>
       </div>
-      
     </>
   );
 };

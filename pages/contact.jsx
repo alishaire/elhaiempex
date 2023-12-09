@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Link from "next/link";
 
 const Contact = () => {
   const [openmodel, setOpenmodel] = useState(false);
@@ -39,30 +40,104 @@ const Contact = () => {
       <div className="contact maxpad">
         <div className="maincontact">
           <div className="contactimg"></div>
+
           <div className="contact-content">
-            <h1>Contact Us</h1>
-            <p>
-              Pem-America is an established Home Textile Leader due to our
-              ongoing dedication to: <br />
-              Providing quality products at key price points. In order to do so,
-              all Pem-America teams work hand in hand to ensure that their
-              licensors and retailers are provided the best in class care and
-              service.
-            </p>
-            <br />
-            <h2>Corporate Office</h2>
-            <p>PEM America, Inc.</p>
-            <p>70 W. 36th Street 2nd Fl., New York, NY 10018</p>
-            <a href="tel: (212) 481-2141">Tel: (212) 481-2141</a> <br />
-            <a href="mailto:customerservice@pemamerica.com">
-              customerservice@pemamerica.com
-            </a>
-            <br />
-            <h2>Sales Office</h2>
-            <p>PEM America, Inc.</p>
-            <p>8346 Sterling Street, Irving, TX 75063</p>
-            <a href="tel: (212) 481-2141">Tel: (212) 481-2141</a> <br />
-            <button onClick={() => setOpenmodel(!openmodel)}>
+            <div className="pageHeaderSec">
+              <h1>Contact Us</h1>
+              <p>
+                Thank you for considering Elahi Impex for your home textile
+                needs. Have questions or want to connect with us? Reach out to
+                our dedicated teams for customer support, business inquiries,
+                careers, and wholesale partnerships. <br /> We value your
+                feedback and strive to provide an unparalleled experience.
+                Elevate your living spaces with Elahi Impex, where every product
+                tells a story of comfort, luxury, and timeless style. Welcome to
+                a world of refined living.
+              </p>
+            </div>
+
+            <div className="corpOffice">
+              <h2>Customer Support:</h2>
+              <p>
+                For any assistance regarding our products or services, our
+                dedicated customer support team is here to help. Reach out to us
+                via email or phone:
+              </p>
+              <div className="social-email">
+                <i class="bx bx-envelope"></i>
+                <Link href={"/"}>customersupport@elahiimpex.com</Link>
+              </div>
+              <div className="social-phone">
+                <i class="bx bx-phone"></i>
+                <span>+92-XXXX-XXXXXX</span>
+              </div>
+            </div>
+
+            <div className="corpOffice">
+              <h2>Business Inquiries:</h2>
+              <p>
+                If you are interested in collaborating with Elahi Impex or have
+                business-related questions, please contact our business
+                development team:
+              </p>
+              <div className="social-email">
+                <i class="bx bx-envelope"></i>
+                <Link href={"/"}>loremipsum@elahiimpex.com</Link>
+              </div>
+              <div className="social-phone">
+                <i class="bx bx-phone"></i>
+                <span>+92-XXXX-XXXXXX</span>
+              </div>
+            </div>
+
+            <div className="corpOffice">
+              <h2>Careers:</h2>
+              <p>
+                If you are interested in collaborating with Elahi Impex or have
+                business-related questions, please contact our business
+                development team:
+              </p>
+              <div className="social-email">
+                <i class="bx bx-envelope"></i>
+                <Link href={"/"}>careers@elahiimpex.com</Link>
+              </div>
+              <div className="social-phone">
+                <i class="bx bx-phone"></i>
+                <span>+92-XXXX-XXXXXX</span>
+              </div>
+            </div>
+
+            <div className="corpOffice">
+              <h2>Wholesale Enquiries</h2>
+              <p>
+                If you are a retailer or wholesaler interested in our products,
+                please reach out to our wholesale team:
+              </p>
+              <div className="social-email">
+                <i class="bx bx-envelope"></i>
+                <Link href={"/"}>wholesale@elahiimpex.com</Link>
+              </div>
+              <div className="social-phone">
+                <i class="bx bx-phone"></i>
+                <span>+92-XXXX-XXXXXX</span>
+              </div>
+            </div>
+
+            <div className="corpOffice">
+              <h2>Get In Touch</h2>
+              <p>
+                If you are a retailer or wholesaler interested in our products,
+                please reach out to our wholesale team:
+              </p>
+
+              <div className="socialhandles">
+                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+
+            <button onClick={() => setOpenmodel(true)}>
               Contact Us <i className="fa-solid fa-paper-plane"></i>
             </button>
           </div>

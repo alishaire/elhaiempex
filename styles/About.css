@@ -14,7 +14,7 @@
   min-height: 100vh;
 }
 .aboutcontent {
-  padding: 60px 20px 0 20px;
+  padding: 60px 20px 20px 20px;
 }
 .aboutcontent h1 {
   font-weight: 500;
@@ -65,7 +65,6 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
-
   border-radius: 10px;
 }
 
@@ -79,6 +78,11 @@
   color: gray;
   font-size: 40px;
   font-weight: 600;
+}
+.aboutcontent h2{
+  font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+  font-weight: 600;
+  margin-top: 10px;
 }
 
 @media (max-width: 1113px) {

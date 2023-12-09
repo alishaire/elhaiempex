@@ -13,7 +13,7 @@
   min-height: 100vh;
 }
 .contact-content {
-  text-align: center;
+  /* text-align: center; */
   margin-top: 30px;
   padding: 30px;
 }
@@ -166,4 +166,103 @@
   right: 10px;
   font-size: 23px;
   color: gray;
+}
+
+.social-email,
+.social-phone {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.social-email i,
+.social-phone i {
+  /* border: 1px solid black; */
+  font-size: 20px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 100%;
+  color: gray;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.3s all ease-in-out;
+}
+
+.social-email i:hover,
+.social-phone i:hover {
+  background-color: transparent;
+  margin-right: 10px;
+}
+
+.corpOffice h2 {
+  margin-bottom: 8px;
+  padding: 6px 0;
+  width: fit-content;
+  font-size: clamp(1rem, 0.6875rem + 1vw, 1.2rem);
+  font-weight: 500;
+  position: relative;
+}
+
+.corpOffice h2::after {
+  position: absolute;
+  content: "";
+  border: 1px solid rgb(120, 120, 120);
+
+  width: 0%;
+  height: 1px;
+  opacity: 0;
+  left: 0;
+  background-color: gray;
+  bottom: 0;
+  transition: 0.3s all ease-in-out;
+}
+
+.corpOffice:hover.corpOffice h2::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.socialhandles {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.socialhandles i {
+  padding: 8px;
+  border-radius: 100%;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.socialhandles i:hover {
+  transform: scale(1.09);
+}
+
+.bxl-facebook {
+  background-color: #1877f2;
+}
+.bxl-twitter {
+  background-color: #1da1f2;
+}
+.fa-instagram {
+  background: linear-gradient(
+    to right,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
 }

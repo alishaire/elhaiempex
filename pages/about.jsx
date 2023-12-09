@@ -11,26 +11,46 @@ const About = () => {
           <div className="aboutcontent">
             <h1>About</h1>
             <p>
-              Elahi Impex corporate office is in Faisalabad the City of Textile,
-              is now one of Pakistan’s fastest growing Home Textile providers.
-              We company began with the weaving unit and has since expanded to
-              home made ups. We Explore a world of textures, colors, and
-              patterns as you browse through our exquisite bed and bath linen.
-              Our commitment to using the finest materials ensures durability,
-              breathability, and a touch of opulence that transforms your
-              bedroom and bathroom into a sanctuary of relaxation. Immerse
-              yourself in the luxury, where every product is a testament to our
-              dedication to creating a haven of comfort in your home. Indulge in
-              the elegance of our bed sheets, fitted sheets, and towels – an
-              embodiment of sophistication and comfort that transcends the
-              ordinary.
-              <br /><br />
-               Welcome to a world where quality meets style, and
-              relaxation is an art form. Welcome to Elahi Impex where we
-              redefine the way you experience the comfort of home. We are
-              specialized in White bedding for Hotel and Hospitals with the
-              premium quality and luxury hand feel. That has all the elements of
-              sustainability innovation and eco friendly as well.
+              Welcome to Elahi Impex, where innovation, luxury, and
+              sustainability converge to redefine your home textile experience.
+              As one of Pakistan's fastest-growing providers of home textiles,
+              we take pride in our roots in the City of Textile, Faisalabad. Our
+              journey began with a weaving unit and has evolved into a
+              comprehensive range of home-made ups, featuring a rich tapestry of
+              textures, colors, and patterns.
+            </p>
+            <h2>Exquisite Bed and Bath Linen:</h2>
+            <p>
+              Embark on a sensory journey as you explore our exquisite bed and
+              bath linen collection. Immerse yourself in the opulence of our
+              meticulously crafted products, designed to transform your bedroom
+              and bathroom into sanctuaries of relaxation. Our commitment to
+              using the finest materials ensures durability, breathability, and
+              a touch of luxury that goes beyond the ordinary.
+            </p>
+            <h2>A Haven of Comfort:</h2>
+            <p>
+              At Elahi Impex, we believe in creating a haven of comfort in your
+              home. Indulge in the elegance of our bed sheets, fitted sheets,
+              and towels—an embodiment of sophistication that elevates your
+              living spaces. Each product is a testament to our dedication to
+              quality, ensuring a touch of opulence in every detail.
+            </p>
+            <h2>Specialization in White Bedding for Hotels and Hospitals: </h2>
+            <p>
+              We specialize in providing premium-quality, luxury white bedding
+              for hotels and hospitals. Our products not only embody elegance
+              but also prioritize sustainability and eco-friendliness. Discover
+              a world where every thread is woven with precision and care,
+              offering the perfect blend of style and comfort.
+            </p>
+            <h2>Quality Meets Style: </h2>
+            <p>
+              Elahi Impex is synonymous with a world where quality meets style.
+              Our products are designed with an artistic touch, reflecting a
+              commitment to innovation and contemporary design. Whether you are
+              looking for bedding that exudes sophistication or towels that
+              cocoon you in comfort, we have it all.
             </p>
             <div className="productsdiv">
               <div className="items">
@@ -71,7 +91,7 @@ const About = () => {
                   )}
                 </CountUp>
               </div>
-          
+
               <div className="counterItems">
                 <h4>Stitching machine</h4>
 
