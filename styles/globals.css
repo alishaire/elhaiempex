@@ -4,9 +4,23 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 
 p{
   font-size: clamp(0.8125rem, 0.7917rem + 0.1111vw, 0.875rem) !important;
+}
+
+body {
+  overflow: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+/* Optionally, you can style the content to ensure it's not cut off */
+
+/* WebKit browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+  display: none;
 }

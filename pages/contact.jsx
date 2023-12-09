@@ -35,13 +35,33 @@ const Contact = () => {
     }
   }, [openmodel]);
 
+
+
+  const [shoudlScroll, setShouldScroll] = useState(false)
+
+  const handlescroll = () =>{
+   setShouldScroll(true)
+  }
+ 
+  useEffect(() => {
+    if(shoudlScroll){
+      window.scrollTo(0,809)
+      setShouldScroll(false)
+    }
+   
+  }, [handlescroll])
+  
+
+
+
   return (
     <>
       <div className="contact maxpad">
         <div className="maincontact">
           <div className="contactimg"></div>
 
-          <div className="contact-content">
+          <div className="contact-content" >
+            <span className="scrollMark" onClick={handlescroll}><i class='bx bx-down-arrow-alt'></i></span>
             <div className="pageHeaderSec">
               <h1>Contact Us</h1>
               <p>
