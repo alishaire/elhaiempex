@@ -257,7 +257,7 @@ const Products = () => {
           <h3>Product Lines</h3>
           <h2 className="topBannerHeading">Welcome to Elahi Impex - Unveiling Luxury in Every Thread</h2>
           <p className="topBannerDesc">
-            Discover a world of sophistication and comfort with Elahi Impex's
+            Discover a world of sophistication and comfort with Elahi Impex&apos;s
             exclusive range of home textile products. Immerse yourself in the
             opulence of our meticulously crafted collection, where each item is
             a testament to our commitment to quality and timeless design.
@@ -279,12 +279,7 @@ const Products = () => {
             ))}
           </div>
         </div>
-        {/* <div className="featuredProduct">
-          <img
-            src="https://pemamerica.com/wp-content/uploads/2020/07/London-Fog.jpg"
-            alt="PRODUCTS ITEMS"
-          />
-        </div> */}
+      
       </div>
 
       <div className={openmodel ? "imagesMainModel open" : "imagesMainModel"}>
