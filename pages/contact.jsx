@@ -1,7 +1,32 @@
 import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
+import { Galleria } from 'primereact/galleria';
 
+export const PhotoService = {
+  getData() {
+      return [
+          {
+              itemImageSrc: './Contact/contact1.jpg',
+              thumbnailImageSrc: './Contact/contact1.jpg',
+              alt: 'Description for Image 1',
+              title: 'Title 1'
+          },
+          {
+              itemImageSrc:  './Contact/modren.jpg',
+              thumbnailImageSrc: './Contact/modren.jpg',
+              alt: 'Description for Image 2',
+              title: 'Title 2'
+          },
+         
+        
+      ];
+  },
+
+  getImages() {
+      return Promise.resolve(this.getData());
+  }
+};
 const Contact = () => {
   const [openmodel, setOpenmodel] = useState(false);
 
@@ -50,7 +75,19 @@ const Contact = () => {
     }
    
   }, [handlescroll])
-  
+  const [images, setImages] = useState(null);
+
+  useEffect(() => {
+          PhotoService.getImages().then(data => setImages(data));
+  }, []);
+
+  const itemTemplate = (item) => {
+      return <img src={item.itemImageSrc} alt={item.alt} style={{ width: '100%', height:"100vh",objectFit:"cover" }} />;
+  }
+
+  const thumbnailTemplate = (item) => {
+      return <img src={item.thumbnailImageSrc} alt={item.alt} style={{ display: 'block' }} />;
+  }
 
 
 
@@ -58,8 +95,10 @@ const Contact = () => {
     <>
       <div className="contact maxpad">
         <div className="maincontact">
-          <div className="contactimg"></div>
-
+        <div className="card" style={{minHeight:"100vh"}} > 
+            <Galleria value={images} numVisible={5} circular 
+                showThumbnails={false} showItemNavigators  showItemNavigatorsOnHover item={itemTemplate} />
+        </div>
           <div className="contact-content" >
             <span className="scrollMark" onClick={handlescroll}><i className='bx bx-down-arrow-alt'></i></span>
             <div className="pageHeaderSec">

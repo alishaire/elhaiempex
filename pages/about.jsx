@@ -1,13 +1,83 @@
-import React from "react";
-
+import React, { useState, useEffect } from 'react';
+import { Galleria } from 'primereact/galleria';
 import CountUp from "react-countup";
 
+export const PhotoService = {
+  getData() {
+      return [
+          {
+              itemImageSrc: './About/Beachtowel.jpg',
+              thumbnailImageSrc: './About/Beachtowel.jpg',
+              alt: 'Description for Image 1',
+              title: 'Title 1'
+          },
+          {
+              itemImageSrc:  './About/bedroom.jpg',
+              thumbnailImageSrc: './About/Beachtowel.jpg',
+              alt: 'Description for Image 2',
+              title: 'Title 2'
+          },
+          {
+              itemImageSrc: './About/Coutch.jpg',
+              thumbnailImageSrc: './About/HomeTextile.jpg',
+              alt: 'Description for Image 3',
+              title: 'Title 3'
+          },
+          {
+              itemImageSrc: './About/HomeTextile.jpg',
+              thumbnailImageSrc: './About/Beachtowel.jpg',
+              alt: 'Description for Image 4',
+              title: 'Title 4'
+          },
+          {
+              itemImageSrc: './About/hotelWindow.jpg',
+              thumbnailImageSrc: './About/Beachtowel.jpg',
+              alt: 'Description for Image 5',
+              title: 'Title 5'
+          },
+          {
+              itemImageSrc: './About/Kitchen.jpg',
+              thumbnailImageSrc: './About/Beachtowel.jpg',
+              alt: 'Description for Image 6',
+              title: 'Title 6'
+          },
+          {
+              itemImageSrc: './About/whitebedding.jpg',
+              thumbnailImageSrc: './About/Beachtowel.jpg',
+              alt: 'Description for Image 7',
+              title: 'Title 7'
+          },
+        
+      ];
+  },
+
+  getImages() {
+      return Promise.resolve(this.getData());
+  }
+};
 const About = () => {
+  const [images, setImages] = useState(null);
+
+  useEffect(() => {
+          PhotoService.getImages().then(data => setImages(data));
+  }, []);
+
+  const itemTemplate = (item) => {
+      return <img src={item.itemImageSrc} alt={item.alt} style={{ width: '100%', height:"100vh",objectFit:"cover" }} />;
+  }
+
+  const thumbnailTemplate = (item) => {
+      return <img src={item.thumbnailImageSrc} alt={item.alt} style={{ display: 'block' }} />;
+  }
+
   return (
     <>
       <div className="about maxpad">
         <div className="aboutmain">
-          <div className="aboutimg"></div>
+        <div className="card" style={{minHeight:"100vh"}} > 
+            <Galleria value={images} numVisible={5} circular 
+                showThumbnails={false} showItemNavigators  showItemNavigatorsOnHover item={itemTemplate} />
+        </div>
           <div className="aboutcontent">
             <h1>About</h1>
             <p>
