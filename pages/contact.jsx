@@ -61,7 +61,7 @@ const Contact = () => {
           <div className="contactimg"></div>
 
           <div className="contact-content" >
-            <span className="scrollMark" onClick={handlescroll}><i class='bx bx-down-arrow-alt'></i></span>
+            <span className="scrollMark" onClick={handlescroll}><i className='bx bx-down-arrow-alt'></i></span>
             <div className="pageHeaderSec">
               <h1>Contact Us</h1>
               <p>
@@ -84,11 +84,11 @@ const Contact = () => {
                 via email or phone:
               </p>
               <div className="social-email">
-                <i class="bx bx-envelope"></i>
+                <i className="bx bx-envelope"></i>
                 <Link href={"/"}>customersupport@elahiimpex.com</Link>
               </div>
               <div className="social-phone">
-                <i class="bx bx-phone"></i>
+                <i className="bx bx-phone"></i>
                 <span>+92-XXXX-XXXXXX</span>
               </div>
             </div>
@@ -101,11 +101,11 @@ const Contact = () => {
                 development team:
               </p>
               <div className="social-email">
-                <i class="bx bx-envelope"></i>
+                <i className="bx bx-envelope"></i>
                 <Link href={"/"}>loremipsum@elahiimpex.com</Link>
               </div>
               <div className="social-phone">
-                <i class="bx bx-phone"></i>
+                <i className="bx bx-phone"></i>
                 <span>+92-XXXX-XXXXXX</span>
               </div>
             </div>
@@ -118,11 +118,11 @@ const Contact = () => {
                 development team:
               </p>
               <div className="social-email">
-                <i class="bx bx-envelope"></i>
+                <i className="bx bx-envelope"></i>
                 <Link href={"/"}>careers@elahiimpex.com</Link>
               </div>
               <div className="social-phone">
-                <i class="bx bx-phone"></i>
+                <i className="bx bx-phone"></i>
                 <span>+92-XXXX-XXXXXX</span>
               </div>
             </div>
@@ -134,11 +134,11 @@ const Contact = () => {
                 please reach out to our wholesale team:
               </p>
               <div className="social-email">
-                <i class="bx bx-envelope"></i>
+                <i className="bx bx-envelope"></i>
                 <Link href={"/"}>wholesale@elahiimpex.com</Link>
               </div>
               <div className="social-phone">
-                <i class="bx bx-phone"></i>
+                <i className="bx bx-phone"></i>
                 <span>+92-XXXX-XXXXXX</span>
               </div>
             </div>
@@ -151,9 +151,9 @@ const Contact = () => {
               </p>
 
               <div className="socialhandles">
-                <i class="bx bxl-facebook"></i>
-                <i class="bx bxl-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <i className="bx bxl-facebook"></i>
+                <i className="bx bxl-twitter"></i>
+                <i className="fa-brands fa-instagram"></i>
               </div>
             </div>
 
@@ -186,7 +186,7 @@ const Contact = () => {
                       name="fname"
                       placeholder="Enter Your First Name"
                     />
-                    <i class="bx bx-user-pin"></i>
+                    <i className="bx bx-user-pin"></i>
                   </div>
                   <div className="formParent">
                     <input
@@ -194,7 +194,7 @@ const Contact = () => {
                       name="lname"
                       placeholder="Enter Your Last Name"
                     />
-                    <i class="bx bx-user-pin"></i>
+                    <i className="bx bx-user-pin"></i>
                   </div>
                 </div>
                 <div className="formParent">
@@ -204,7 +204,7 @@ const Contact = () => {
                     name="email"
                     placeholder="Enter Your Email"
                   />
-                  <i class="bx bx-user-pin"></i>
+                  <i className="bx bx-user-pin"></i>
                 </div>
                 <div className="formParent">
                   <input
@@ -212,7 +212,7 @@ const Contact = () => {
                     name="phone"
                     placeholder="Enter Your Company Name"
                   />
-                  <i class="bx bx-building-house"></i>
+                  <i className="bx bx-building-house"></i>
                 </div>
                 <div className="formParent">
                   <input
@@ -220,7 +220,7 @@ const Contact = () => {
                     name="productName"
                     placeholder="Enter Your Product Name"
                   />
-                  <i class="bx bx-cart-download"></i>
+                  <i className="bx bx-cart-download"></i>
                 </div>
                 <div className="formParent">
                   <input
@@ -228,7 +228,7 @@ const Contact = () => {
                     name="productNumber"
                     placeholder="Enter Your Product Number"
                   />
-                  <i class="bx bx-phone"></i>
+                  <i className="bx bx-phone"></i>
                 </div>
                 <div>
                   <textarea
