@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #e7e6e6;
 }
 .aboutimg {
@@ -15,6 +15,12 @@
 }
 .aboutcontent {
   padding: 60px 20px 20px 20px;
+  overflow: scroll;
+  position: relative;
+}
+
+.aboutcontent::-webkit-scrollbar {
+  display: none;
 }
 .aboutcontent h1 {
   font-weight: 500;
@@ -79,7 +85,7 @@
   font-size: 40px;
   font-weight: 600;
 }
-.aboutcontent h2{
+.aboutcontent h2 {
   font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
   font-weight: 600;
   margin-top: 10px;
