@@ -12,31 +12,46 @@ const Products = () => {
   const sliderImages = [
     {
       name: "Kitchen Linen",
-      pic: "https://pemamerica.com/wp-content/uploads/2020/08/CharismaMelangeVelvetCS-1-300x253.jpg",
+      pic: "./products/KitchenLinen.jpg",
+      heading: "Kitchen Linen: Where Culinary Elegance Meets Practicality ",
+      desc: "Unleash the chef within you and adorn your kitchen with our Kitchen Linen – the perfect blend of style and functionality for your culinary haven.",
     },
 
     {
       name: "Lab Coat",
-      pic: "https://pemamerica.com/wp-content/uploads/2020/08/Cannon_ClassicCotton_MP_HERO-300x262.jpg",
+      pic: "./products/LabCoat.jpg",
+
+      heading: "Lab Coat: Elevate Professionalism, Embrace Comfort ",
+      desc: "Step into excellence with our Lab Coat – a symbol of precision and comfort, tailored for those who redefine standards in the professional realm.",
     },
 
     {
       name: "Utility Bedding",
-      pic: "https://pemamerica.com/wp-content/uploads/2020/08/Cannon_Heritage_SS_STACK3-245x300.jpg",
+      pic: "./products/Utility Bedding.jpg",
+      heading: "Utility Bedding: Versatile Comfort for Every Dream ",
+      desc: "Redefine your sleep sanctuary with Utility Bedding – where versatility meets unparalleled comfort, ensuring a dreamy escape with every night's rest.",
     },
 
     {
       name: "Bath Accessories",
-      pic: "https://pemamerica.com/wp-content/uploads/2020/08/Printed-Decorative-Pillow-300x251.jpg",
+      pic: "./products/Bedding with window.jpg",
+      heading: "Bath Accessories: Luxe Details for Your Pampering Rituals ",
+      desc: "Elevate your bath experience with Bath Accessories – intricate details that turn every moment into a spa-like indulgence, creating a haven of relaxation.",
     },
 
     {
       name: "Window Treatments",
-      pic: "https://pemamerica.com/wp-content/uploads/2020/08/BM_2PkWindowPanels_BrightWhite-SilverBrooches-300x300.jpg",
+      pic: "./products/Window treatment.jpg",
+
+      heading: "Window Treatments: Unveiling Elegance, One Window at a Time ",
+      desc: "Transform your living spaces with Window Treatments – where elegance meets functionality, creating a picturesque ambiance that reflects your style.",
     },
     {
       name: "Bath & beach Towels",
-      pic: "https://pemamerica.com/wp-content/uploads/2020/08/RWBFields_Americana_TS_Blue_HERO-300x251.jpg",
+      pic: "./products/Bath & Beach.jpg",
+
+      heading: "Bath & Beach Towels: Dive into Luxury, Embrace the Sun ",
+      desc: "Whether at the beach or in your home oasis, our Bath & Beach Towels invite you to dive into luxury and embrace the warmth of the sun with every use.",
     },
   ];
   const PhotoService = {
@@ -240,25 +255,36 @@ const Products = () => {
       <div className="productsParent">
         <div className="mainProducts">
           <h3>Product Lines</h3>
+          <h2 className="topBannerHeading">Welcome to Elahi Impex - Unveiling Luxury in Every Thread</h2>
+          <p className="topBannerDesc">
+            Discover a world of sophistication and comfort with Elahi Impex's
+            exclusive range of home textile products. Immerse yourself in the
+            opulence of our meticulously crafted collection, where each item is
+            a testament to our commitment to quality and timeless design.
+            Explore the diverse categories that redefine luxury living:
+          </p>
           <div className="productsItem">
             {sliderImages.map((v, i) => (
               <div className="itemImage" key={i}>
                 <span>{v.name}</span>
-                <img
-                  onClick={(i) => modeltoggle(v)}
-                  src={v.pic}
-                  alt="Product images"
-                />
+                <img src={v.pic} alt="Product images" />
+
+                <div className="contentOverlay">
+                  <h2>{v.heading}</h2>
+                  <p>{v.desc}</p>
+
+                  <button onClick={(i) => modeltoggle(v)}>Gallery</button>
+                </div>
               </div>
             ))}
           </div>
         </div>
-        <div className="featuredProduct">
+        {/* <div className="featuredProduct">
           <img
             src="https://pemamerica.com/wp-content/uploads/2020/07/London-Fog.jpg"
             alt="PRODUCTS ITEMS"
           />
-        </div>
+        </div> */}
       </div>
 
       <div className={openmodel ? "imagesMainModel open" : "imagesMainModel"}>

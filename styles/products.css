@@ -1,9 +1,22 @@
 .productsParent {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  height: 100vh;
+  padding-bottom: 30px;
 }
+
+.topBannerHeading {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+.topBannerDesc {
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
 .featuredProduct {
   width: 100%;
   height: 100vh;
@@ -27,12 +40,67 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  position: relative;
+  /* border: 2px solid red; */
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+}
+
+.contentOverlay {
+  position: absolute;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background-color: rgba(0, 0, 0, 0.229);
+  overflow: scroll;
+  backdrop-filter: blur(10px);
+  transition: 0.3s all ease-in-out;
+  color: white;
+  text-align: start;
+  padding: 10px;
+}
+
+.contentOverlay::-webkit-scrollbar {
+  display: none;
+}
+
+.contentOverlay h2 {
+  font-size: clamp(1rem, 0.9489rem + 0.2727vw, 1.1875rem);
+  margin-bottom: 10px;
+}
+
+.contentOverlay p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.contentOverlay button {
+  background-color: transparent;
+  border: none;
+  border: 1px solid white;
+  color: white;
+  padding: 1px 10px;
+  cursor: pointer;
+}
+
+.itemImage:hover .contentOverlay {
+  left: 0%;
 }
 
 .itemImage span {
   margin-bottom: 10px;
   font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  padding: 2px 10px;
+  background-color: rgba(0, 0, 0, 0.229);
+  backdrop-filter: blur(10px);
+  color: white;
 }
+
 .itemImage img {
   width: 100%;
   min-height: 200px;
@@ -45,17 +113,17 @@
   text-align: center;
   font-size: clamp(1.5625rem, 1.4583rem + 0.5556vw, 1.875rem);
   font-weight: 500;
-  padding: 70px 15px 30px 15px;
+  padding: 70px 15px 20px 15px;
 }
 
-@media (max-width: 1024px) {
-  .productsParent {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 608px) {
+@media (max-width: 1000px) {
   .productsItem {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 686px) {
+  .productsItem {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -99,7 +167,6 @@
   transform: scale(1);
   transition: 0.6 all ease-in-out;
 }
-
 
 .gallery {
   width: 100%;
