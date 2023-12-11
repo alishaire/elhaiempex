@@ -13,7 +13,7 @@ const About = () => {
             <p>
               Welcome to Elahi Impex, where innovation, luxury, and
               sustainability converge to redefine your home textile experience.
-              As one of Pakistan's fastest-growing providers of home textiles,
+              As one of Pakistan&apos;s fastest-growing providers of home textiles,
               we take pride in our roots in the City of Textile, Faisalabad. Our
               journey began with a weaving unit and has evolved into a
               comprehensive range of home-made ups, featuring a rich tapestry of
@@ -44,7 +44,7 @@ const About = () => {
               a world where every thread is woven with precision and care,
               offering the perfect blend of style and comfort.
             </p>
-            <h2>Quality Meets Style: </h2>
+            <h2>Quality Meets Style:</h2>
             <p>
               Elahi Impex is synonymous with a world where quality meets style.
               Our products are designed with an artistic touch, reflecting a
