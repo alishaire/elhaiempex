@@ -34,21 +34,56 @@
 
 .slide-1 {
   background-image: linear-gradient(20deg, #1b1a1a, #a7a7a700),
-    url("../public//home/slide-1.webp");
+    url("../public//home/Bedding.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .slide-02 {
   background-image: linear-gradient(20deg, #1b1a1a, #a7a7a700),
-    url("../public/home/slide-2.webp");
+    url("../public/home/Bathdecore.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .slide-03 {
   background-image: linear-gradient(20deg, #1b1a1a, #a7a7a700),
-    url("../public/home/slide-3.webp");
+    url("../public/home/Bathandbeach.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-04 {
+  background-image: linear-gradient(20deg, #1b1a1a, #a7a7a700),
+    url("../public/home/Beddingwithwindow.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-05 {
+  background-image: linear-gradient(20deg, #1b1a1a, #a7a7a700),
+    url("../public/home/Kitchen.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-06 {
+  background-image: linear-gradient(20deg, #1b1a1a, #a7a7a700),
+    url("../public/home/LabCoats.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-07 {
+  background-image: linear-gradient(20deg, #1b1a1a, #a7a7a700),
+    url("../public/home/UtilityBedding.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-08 {
+  background-image: linear-gradient(20deg, #1b1a1a, #a7a7a700),
+    url("../public/home/Windowtreatment.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

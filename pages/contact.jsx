@@ -1,7 +1,32 @@
 import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
+import { Galleria } from 'primereact/galleria';
 
+export const PhotoService = {
+  getData() {
+      return [
+          {
+              itemImageSrc: './Contact/contact1.jpg',
+              thumbnailImageSrc: './Contact/contact1.jpg',
+              alt: 'Description for Image 1',
+              title: 'Title 1'
+          },
+          {
+              itemImageSrc:  './Contact/modren.jpg',
+              thumbnailImageSrc: './Contact/modren.jpg',
+              alt: 'Description for Image 2',
+              title: 'Title 2'
+          },
+         
+        
+      ];
+  },
+
+  getImages() {
+      return Promise.resolve(this.getData());
+  }
+};
 const Contact = () => {
   const [openmodel, setOpenmodel] = useState(false);
 
@@ -50,7 +75,19 @@ const Contact = () => {
     }
    
   }, [handlescroll])
-  
+  const [images, setImages] = useState(null);
+
+  useEffect(() => {
+          PhotoService.getImages().then(data => setImages(data));
+  }, []);
+
+  const itemTemplate = (item) => {
+      return <img src={item.itemImageSrc} alt={item.alt} style={{ width: '100%', height:"100vh",objectFit:"cover" }} />;
+  }
+
+  const thumbnailTemplate = (item) => {
+      return <img src={item.thumbnailImageSrc} alt={item.alt} style={{ display: 'block' }} />;
+  }
 
 
 
@@ -58,10 +95,12 @@ const Contact = () => {
     <>
       <div className="contact maxpad">
         <div className="maincontact">
-          <div className="contactimg"></div>
-
+        <div className="card" style={{minHeight:"100vh"}} > 
+            <Galleria value={images} numVisible={5} circular 
+                showThumbnails={false} showItemNavigators  showItemNavigatorsOnHover item={itemTemplate} />
+        </div>
           <div className="contact-content" >
-            <span className="scrollMark" onClick={handlescroll}><i class='bx bx-down-arrow-alt'></i></span>
+            <span className="scrollMark" onClick={handlescroll}><i className='bx bx-down-arrow-alt'></i></span>
             <div className="pageHeaderSec">
               <h1>Contact Us</h1>
               <p>
@@ -84,11 +123,11 @@ const Contact = () => {
                 via email or phone:
               </p>
               <div className="social-email">
-                <i class="bx bx-envelope"></i>
+                <i className="bx bx-envelope"></i>
                 <Link href={"/"}>customersupport@elahiimpex.com</Link>
               </div>
               <div className="social-phone">
-                <i class="bx bx-phone"></i>
+                <i className="bx bx-phone"></i>
                 <span>+92-XXXX-XXXXXX</span>
               </div>
             </div>
@@ -101,11 +140,11 @@ const Contact = () => {
                 development team:
               </p>
               <div className="social-email">
-                <i class="bx bx-envelope"></i>
+                <i className="bx bx-envelope"></i>
                 <Link href={"/"}>loremipsum@elahiimpex.com</Link>
               </div>
               <div className="social-phone">
-                <i class="bx bx-phone"></i>
+                <i className="bx bx-phone"></i>
                 <span>+92-XXXX-XXXXXX</span>
               </div>
             </div>
@@ -118,11 +157,11 @@ const Contact = () => {
                 development team:
               </p>
               <div className="social-email">
-                <i class="bx bx-envelope"></i>
+                <i className="bx bx-envelope"></i>
                 <Link href={"/"}>careers@elahiimpex.com</Link>
               </div>
               <div className="social-phone">
-                <i class="bx bx-phone"></i>
+                <i className="bx bx-phone"></i>
                 <span>+92-XXXX-XXXXXX</span>
               </div>
             </div>
@@ -134,11 +173,11 @@ const Contact = () => {
                 please reach out to our wholesale team:
               </p>
               <div className="social-email">
-                <i class="bx bx-envelope"></i>
+                <i className="bx bx-envelope"></i>
                 <Link href={"/"}>wholesale@elahiimpex.com</Link>
               </div>
               <div className="social-phone">
-                <i class="bx bx-phone"></i>
+                <i className="bx bx-phone"></i>
                 <span>+92-XXXX-XXXXXX</span>
               </div>
             </div>
@@ -151,9 +190,9 @@ const Contact = () => {
               </p>
 
               <div className="socialhandles">
-                <i class="bx bxl-facebook"></i>
-                <i class="bx bxl-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <i className="bx bxl-facebook"></i>
+                <i className="bx bxl-twitter"></i>
+                <i className="fa-brands fa-instagram"></i>
               </div>
             </div>
 
@@ -186,7 +225,7 @@ const Contact = () => {
                       name="fname"
                       placeholder="Enter Your First Name"
                     />
-                    <i class="bx bx-user-pin"></i>
+                    <i className="bx bx-user-pin"></i>
                   </div>
                   <div className="formParent">
                     <input
@@ -194,7 +233,7 @@ const Contact = () => {
                       name="lname"
                       placeholder="Enter Your Last Name"
                     />
-                    <i class="bx bx-user-pin"></i>
+                    <i className="bx bx-user-pin"></i>
                   </div>
                 </div>
                 <div className="formParent">
@@ -204,7 +243,7 @@ const Contact = () => {
                     name="email"
                     placeholder="Enter Your Email"
                   />
-                  <i class="bx bx-user-pin"></i>
+                  <i className="bx bx-user-pin"></i>
                 </div>
                 <div className="formParent">
                   <input
@@ -212,7 +251,7 @@ const Contact = () => {
                     name="phone"
                     placeholder="Enter Your Company Name"
                   />
-                  <i class="bx bx-building-house"></i>
+                  <i className="bx bx-building-house"></i>
                 </div>
                 <div className="formParent">
                   <input
@@ -220,7 +259,7 @@ const Contact = () => {
                     name="productName"
                     placeholder="Enter Your Product Name"
                   />
-                  <i class="bx bx-cart-download"></i>
+                  <i className="bx bx-cart-download"></i>
                 </div>
                 <div className="formParent">
                   <input
@@ -228,7 +267,7 @@ const Contact = () => {
                     name="productNumber"
                     placeholder="Enter Your Product Number"
                   />
-                  <i class="bx bx-phone"></i>
+                  <i className="bx bx-phone"></i>
                 </div>
                 <div>
                   <textarea
