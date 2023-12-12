@@ -192,6 +192,21 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="slide-09 slide">
+            <div className=" header_below">
+              <div className="slideContent">
+                <div className="info">
+                  <div className="headingdiv">
+                   <h1>Hotel Slippers</h1>
+                  </div>
+                  <q>
+                    The world around us is constantly changing and so must we…
+                    Rising to these challenges together to achieve our goals.
+                  </q>
+                </div>
+              </div>
+            </div>
+          </div>
         </Slider>
       </main>
     </>

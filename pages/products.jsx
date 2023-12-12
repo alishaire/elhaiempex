@@ -53,10 +53,18 @@ const Products = () => {
       heading: "Bath & Beach Towels: Dive into Luxury, Embrace the Sun ",
       desc: "Whether at the beach or in your home oasis, our Bath & Beach Towels invite you to dive into luxury and embrace the warmth of the sun with every use.",
     },
+    {
+      name: "Hotel Slipper",
+      pic: "./products/hotelsliper.jpg",
+
+      heading: "Hotel Slippers: Walk the Luxury Path ",
+      desc: "Step into a world of opulence with our Hotel Slippers, where each step is a journey in comfort and sophistication.",
+    },
   ];
   const PhotoService = {
     getData() {
       return [
+        // Kitchen =============================
         {
           itemImageSrc: "/Kitchen/1.jpg",
           thumbnailImageSrc: "/Kitchen/1.jpg",
@@ -99,7 +107,7 @@ const Products = () => {
           title: "Kitchen Linen 6",
           name: "Kitchen Linen",
         },
-        // ------
+        // LabCoat ------
 
         {
           itemImageSrc: "/LabCoat/7.jpg",
@@ -143,7 +151,7 @@ const Products = () => {
           title: "Lab Coat 6",
           name: "Lab Coat",
         },
-// ==============
+// UtilityBeding ==============
         {
           itemImageSrc:
           "./UtilityBeding/1.jpg",
@@ -189,6 +197,7 @@ const Products = () => {
           title: "Utility Bedding",
           name: "Utility Bedding",
         },
+        
         {
           itemImageSrc:
           "./UtilityBeding/6.jpg",
@@ -198,69 +207,245 @@ const Products = () => {
           title: "Utility Bedding",
           name: "Utility Bedding",
         },
+        // WindowTreatment =====================
         {
           itemImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria9.jpg",
+          "./WindowTreatment/1.jpg",
           thumbnailImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria9s.jpg",
-          alt: "Description for Image 9",
-          title: "Title 9",
-          name: "Sheets",
+          "./WindowTreatment/1.jpg",
+          alt: "Window Treatments for Image 9",
+          title: "Window Treatments ",
+          name: "Window Treatments",
         },
         {
           itemImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria10.jpg",
+          "./WindowTreatment/2.jpg",
           thumbnailImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria10s.jpg",
-          alt: "Description for Image 10",
-          title: "Title 10",
-          name: "Decor",
+          "./WindowTreatment/2.jpg",
+          alt: "Window Treatments for Image 9",
+          title: "Window Treatments ",
+          name: "Window Treatments",
         },
         {
           itemImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria11.jpg",
+          "./WindowTreatment/3.jpg",
           thumbnailImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria11s.jpg",
-          alt: "Description for Image 11",
-          title: "Title 11",
-          name: "Decor",
+          "./WindowTreatment/3.jpg",
+          alt: "Window Treatments for Image 9",
+          title: "Window Treatments ",
+          name: "Window Treatments",
         },
         {
           itemImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria12.jpg",
+          "./WindowTreatment/4.jpg",
           thumbnailImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria12s.jpg",
-          alt: "Description for Image 12",
-          title: "Title 12",
-          name: "Decor",
+          "./WindowTreatment/4.jpg",
+          alt: "Window Treatments for Image 9",
+          title: "Window Treatments ",
+          name: "Window Treatments",
         },
         {
           itemImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria13.jpg",
+          "./WindowTreatment/5.jpg",
           thumbnailImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria13s.jpg",
-          alt: "Description for Image 13",
-          title: "Title 13",
-          name: "Window",
+          "./WindowTreatment/5.jpg",
+          alt: "Window Treatments for Image 9",
+          title: "Window Treatments ",
+          name: "Window Treatments",
         },
         {
           itemImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria14.jpg",
+          "./WindowTreatment/6.jpg",
           thumbnailImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria14s.jpg",
-          alt: "Description for Image 14",
-          title: "Title 14",
-          name: "Window",
+          "./WindowTreatment/6.jpg",
+          alt: "Window Treatments for Image 9",
+          title: "Window Treatments ",
+          name: "Window Treatments",
         },
         {
           itemImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria15.jpg",
+          "./WindowTreatment/7.jpg",
           thumbnailImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria15s.jpg",
-          alt: "Description for Image 15",
-          title: "Title 15",
-          name: "Window",
+          "./WindowTreatment/7.jpg",
+          alt: "Window Treatments for Image 9",
+          title: "Window Treatments ",
+          name: "Window Treatments",
         },
+        //BathAccessories ================
+        {
+          itemImageSrc:
+          "./BathAccessories/1.jpg",
+          thumbnailImageSrc:
+          "./BathAccessories/1.jpg",
+          alt: "Bath Accessories",
+          title: "Bath Accessories",
+          name: "Bath Accessories",
+        },
+        {
+          itemImageSrc:
+          "./BathAccessories/2.jpg",
+          thumbnailImageSrc:
+          "./BathAccessories/2.jpg",
+          alt: "Bath Accessories",
+          title: "Bath Accessories",
+          name: "Bath Accessories",
+        },
+        {
+          itemImageSrc:
+          "./BathAccessories/3.jpg",
+          thumbnailImageSrc:
+          "./BathAccessories/3.jpg",
+          alt: "Bath Accessories",
+          title: "Bath Accessories",
+          name: "Bath Accessories",
+        },
+        {
+          itemImageSrc:
+          "./BathAccessories/4.jpg",
+          thumbnailImageSrc:
+          "./BathAccessories/4.jpg",
+          alt: "Bath Accessories",
+          title: "Bath Accessories",
+          name: "Bath Accessories",
+        },
+        {
+          itemImageSrc:
+          "./BathAccessories/5.jpg",
+          thumbnailImageSrc:
+          "./BathAccessories/5.jpg",
+          alt: "Bath Accessories",
+          title: "Bath Accessories",
+          name: "Bath Accessories",
+        },
+        {
+          itemImageSrc:
+          "./BathAccessories/6.jpg",
+          thumbnailImageSrc:
+          "./BathAccessories/6.jpg",
+          alt: "Bath Accessories",
+          title: "Bath Accessories",
+          name: "Bath Accessories",
+        },
+// Bath & Beach ======================
+        {
+          itemImageSrc:
+          "./BathBeach/1.jpg",
+          thumbnailImageSrc:
+          "./BathBeach/1.jpg",
+          alt: "Bath & beach Towels",
+          title: "Bath & beach Towels",
+          name: "Bath & beach Towels",
+        },
+        {
+          itemImageSrc:
+          "./BathBeach/2.jpg",
+          thumbnailImageSrc:
+          "./BathBeach/2.jpg",
+          alt: "Bath & beach Towels",
+          title: "Bath & beach Towels",
+          name: "Bath & beach Towels",
+        },
+        {
+          itemImageSrc:
+          "./BathBeach/3.jpg",
+          thumbnailImageSrc:
+          "./BathBeach/3.jpg",
+          alt: "Bath & beach Towels",
+          title: "Bath & beach Towels",
+          name: "Bath & beach Towels",
+        },
+        {
+          itemImageSrc:
+          "./BathBeach/4.jpg",
+          thumbnailImageSrc:
+          "./BathBeach/4.jpg",
+          alt: "Bath & beach Towels",
+          title: "Bath & beach Towels",
+          name: "Bath & beach Towels",
+        },
+        {
+          itemImageSrc:
+          "./BathBeach/5.jpg",
+          thumbnailImageSrc:
+          "./BathBeach/5.jpg",
+          alt: "Bath & beach Towels",
+          title: "Bath & beach Towels",
+          name: "Bath & beach Towels",
+        },
+        {
+          itemImageSrc:
+          "./BathBeach/6.jpg",
+          thumbnailImageSrc:
+          "./BathBeach/6.jpg",
+          alt: "Bath & beach Towels",
+          title: "Bath & beach Towels",
+          name: "Bath & beach Towels",
+        },
+        {
+          itemImageSrc:
+          "./BathBeach/7.jpg",
+          thumbnailImageSrc:
+          "./BathBeach/7.jpg",
+          alt: "Bath & beach Towels",
+          title: "Bath & beach Towels",
+          name: "Bath & beach Towels",
+        },
+// =====================
+        {
+          itemImageSrc:
+          "./HotelSliper/1.jpg",
+          thumbnailImageSrc:
+          "./HotelSliper/1.jpg",
+          alt: "Hotel Slipper",
+          title: "Hotel Slipper",
+          name: "Hotel Slipper",
+        },
+        {
+          itemImageSrc:
+          "./HotelSliper/2.jpg",
+          thumbnailImageSrc:
+          "./HotelSliper/2.jpg",
+          alt: "Hotel Slipper",
+          title: "Hotel Slipper",
+          name: "Hotel Slipper",
+        },
+        {
+          itemImageSrc:
+          "./HotelSliper/3.jpg",
+          thumbnailImageSrc:
+          "./HotelSliper/3.jpg",
+          alt: "Hotel Slipper",
+          title: "Hotel Slipper",
+          name: "Hotel Slipper",
+        },
+        {
+          itemImageSrc:
+          "./HotelSliper/4.jpg",
+          thumbnailImageSrc:
+          "./HotelSliper/4.jpg",
+          alt: "Hotel Slipper",
+          title: "Hotel Slipper",
+          name: "Hotel Slipper",
+        },
+        {
+          itemImageSrc:
+          "./HotelSliper/5.jpg",
+          thumbnailImageSrc:
+          "./HotelSliper/5.jpg",
+          alt: "Hotel Slipper",
+          title: "Hotel Slipper",
+          name: "Hotel Slipper",
+        },
+        {
+          itemImageSrc:
+          "./HotelSliper/6.jpg",
+          thumbnailImageSrc:
+          "./HotelSliper/6.jpg",
+          alt: "Hotel Slipper",
+          title: "Hotel Slipper",
+          name: "Hotel Slipper",
+        },
+       
       ];
     },
 

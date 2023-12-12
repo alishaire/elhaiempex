@@ -1,31 +1,29 @@
 import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
-import { Galleria } from 'primereact/galleria';
+import { Galleria } from "primereact/galleria";
 
 export const PhotoService = {
   getData() {
-      return [
-          {
-              itemImageSrc: './Contact/contact1.jpg',
-              thumbnailImageSrc: './Contact/contact1.jpg',
-              alt: 'Description for Image 1',
-              title: 'Title 1'
-          },
-          {
-              itemImageSrc:  './Contact/modren.jpg',
-              thumbnailImageSrc: './Contact/modren.jpg',
-              alt: 'Description for Image 2',
-              title: 'Title 2'
-          },
-         
-        
-      ];
+    return [
+      {
+        itemImageSrc: "./Contact/contact1.jpg",
+        thumbnailImageSrc: "./Contact/contact1.jpg",
+        alt: "Description for Image 1",
+        title: "Title 1",
+      },
+      {
+        itemImageSrc: "./Contact/modren.jpg",
+        thumbnailImageSrc: "./Contact/modren.jpg",
+        alt: "Description for Image 2",
+        title: "Title 2",
+      },
+    ];
   },
 
   getImages() {
-      return Promise.resolve(this.getData());
-  }
+    return Promise.resolve(this.getData());
+  },
 };
 const Contact = () => {
   const [openmodel, setOpenmodel] = useState(false);
@@ -60,52 +58,64 @@ const Contact = () => {
     }
   }, [openmodel]);
 
+  const [shoudlScroll, setShouldScroll] = useState(false);
 
+  const handlescroll = () => {
+    setShouldScroll(true);
+  };
 
-  const [shoudlScroll, setShouldScroll] = useState(false)
-
-  const handlescroll = () =>{
-   setShouldScroll(true)
-  }
- 
   useEffect(() => {
-    if(shoudlScroll){
-      window.scrollTo(0,809)
-      setShouldScroll(false)
+    const contentMain = document.getElementById("items");
+    if (shoudlScroll) {
+      contentMain.scrollTo(0, 809);
+      setShouldScroll(false);
     }
-   
-  }, [handlescroll])
+  }, [handlescroll]);
   const [images, setImages] = useState(null);
 
   useEffect(() => {
-          PhotoService.getImages().then(data => setImages(data));
+    PhotoService.getImages().then((data) => setImages(data));
   }, []);
 
   const itemTemplate = (item) => {
-      return <img src={item.itemImageSrc} alt={item.alt} style={{ width: '100%', height:"100vh",objectFit:"cover" }} />;
-  }
+    return (
+      <img
+        src={item.itemImageSrc}
+        alt={item.alt}
+        style={{ width: "100%", height: "100vh", objectFit: "cover" }}
+      />
+    );
+  };
 
   const thumbnailTemplate = (item) => {
-      return <img src={item.thumbnailImageSrc} alt={item.alt} style={{ display: 'block' }} />;
-  }
-
-
+    return (
+      <img
+        src={item.thumbnailImageSrc}
+        alt={item.alt}
+        style={{ display: "block" }}
+      />
+    );
+  };
 
   return (
     <>
       <div className="contact maxpad">
         <div className="maincontact">
-        <div className="card" style={{minHeight:"100vh"}} > 
-            <Galleria value={images} numVisible={5} circular 
-                showThumbnails={false} showItemNavigators  showItemNavigatorsOnHover item={itemTemplate} />
-
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.0148750966296!2d73.03574457602451!3d31.496274948331326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392241c98d5ab473%3A0xab4c7bb4a58f66b0!2sElahi%20Impex!5e0!3m2!1sen!2s!4v1702292982093!5m2!1sen!2s"  style={{border:0, width:"100%",height:"25%", marginTop:"10px"}} allowFullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-
-
-        </div>
-          <div className="contact-content" >
-            <span className="scrollMark" onClick={handlescroll}><i className='bx bx-down-arrow-alt'></i></span>
+          <div className="card" style={{ minHeight: "100vh" }}>
+            <Galleria
+              value={images}
+              numVisible={5}
+              circular
+              showThumbnails={false}
+              showItemNavigators
+              showItemNavigatorsOnHover
+              item={itemTemplate}
+            />
+          </div>
+          <div className="contact-content" id="items">
+            <span className="scrollMark" onClick={handlescroll}>
+              <i className="bx bx-down-arrow-alt"></i>
+            </span>
             <div className="pageHeaderSec">
               <h1>Contact Us</h1>
               <p>

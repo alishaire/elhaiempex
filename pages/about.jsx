@@ -1,93 +1,128 @@
-import React, { useState, useEffect } from 'react';
-import { Galleria } from 'primereact/galleria';
+import React, { useState, useEffect } from "react";
+import { Galleria } from "primereact/galleria";
 import CountUp from "react-countup";
 
 export const PhotoService = {
   getData() {
-      return [
-          {
-              itemImageSrc: './About/Beachtowel.jpg',
-              thumbnailImageSrc: './About/Beachtowel.jpg',
-              alt: 'Description for Image 1',
-              title: 'Title 1'
-          },
-          {
-              itemImageSrc:  './About/bedroom.jpg',
-              thumbnailImageSrc: './About/Beachtowel.jpg',
-              alt: 'Description for Image 2',
-              title: 'Title 2'
-          },
-          {
-              itemImageSrc: './About/Coutch.jpg',
-              thumbnailImageSrc: './About/HomeTextile.jpg',
-              alt: 'Description for Image 3',
-              title: 'Title 3'
-          },
-          {
-              itemImageSrc: './About/HomeTextile.jpg',
-              thumbnailImageSrc: './About/Beachtowel.jpg',
-              alt: 'Description for Image 4',
-              title: 'Title 4'
-          },
-          {
-              itemImageSrc: './About/hotelWindow.jpg',
-              thumbnailImageSrc: './About/Beachtowel.jpg',
-              alt: 'Description for Image 5',
-              title: 'Title 5'
-          },
-          {
-              itemImageSrc: './About/Kitchen.jpg',
-              thumbnailImageSrc: './About/Beachtowel.jpg',
-              alt: 'Description for Image 6',
-              title: 'Title 6'
-          },
-          {
-              itemImageSrc: './About/whitebedding.jpg',
-              thumbnailImageSrc: './About/Beachtowel.jpg',
-              alt: 'Description for Image 7',
-              title: 'Title 7'
-          },
-        
-      ];
+    return [
+      {
+        itemImageSrc: "./About/Beachtowel.jpg",
+        thumbnailImageSrc: "./About/Beachtowel.jpg",
+        alt: "Description for Image 1",
+        title: "Title 1",
+      },
+      {
+        itemImageSrc: "./About/bedroom.jpg",
+        thumbnailImageSrc: "./About/Beachtowel.jpg",
+        alt: "Description for Image 2",
+        title: "Title 2",
+      },
+      {
+        itemImageSrc: "./About/Coutch.jpg",
+        thumbnailImageSrc: "./About/HomeTextile.jpg",
+        alt: "Description for Image 3",
+        title: "Title 3",
+      },
+      {
+        itemImageSrc: "./About/HomeTextile.jpg",
+        thumbnailImageSrc: "./About/Beachtowel.jpg",
+        alt: "Description for Image 4",
+        title: "Title 4",
+      },
+      {
+        itemImageSrc: "./About/hotelWindow.jpg",
+        thumbnailImageSrc: "./About/Beachtowel.jpg",
+        alt: "Description for Image 5",
+        title: "Title 5",
+      },
+      {
+        itemImageSrc: "./About/Kitchen.jpg",
+        thumbnailImageSrc: "./About/Beachtowel.jpg",
+        alt: "Description for Image 6",
+        title: "Title 6",
+      },
+      {
+        itemImageSrc: "./About/whitebedding.jpg",
+        thumbnailImageSrc: "./About/Beachtowel.jpg",
+        alt: "Description for Image 7",
+        title: "Title 7",
+      },
+    ];
   },
 
   getImages() {
-      return Promise.resolve(this.getData());
-  }
+    return Promise.resolve(this.getData());
+  },
 };
 const About = () => {
   const [images, setImages] = useState(null);
 
   useEffect(() => {
-          PhotoService.getImages().then(data => setImages(data));
+    PhotoService.getImages().then((data) => setImages(data));
   }, []);
 
   const itemTemplate = (item) => {
-      return <img src={item.itemImageSrc} alt={item.alt} style={{ width: '100%', height:"100vh",objectFit:"cover" }} />;
-  }
+    return (
+      <img
+        src={item.itemImageSrc}
+        alt={item.alt}
+        style={{ width: "100%", height: "100vh", objectFit: "cover" }}
+      />
+    );
+  };
 
   const thumbnailTemplate = (item) => {
-      return <img src={item.thumbnailImageSrc} alt={item.alt} style={{ display: 'block' }} />;
-  }
+    return (
+      <img
+        src={item.thumbnailImageSrc}
+        alt={item.alt}
+        style={{ display: "block" }}
+      />
+    );
+  };
+
+  const [shoudlScroll, setShouldScroll] = useState(false);
+
+  const handlescroll = () => {
+    setShouldScroll(true);
+  };
+
+  useEffect(() => {
+    const contentMain = document.getElementById("items");
+    if (shoudlScroll) {
+      contentMain.scrollTo(0, 809);
+      setShouldScroll(false);
+    }
+  }, [handlescroll]);
 
   return (
     <>
       <div className="about maxpad">
         <div className="aboutmain">
-        <div className="card" style={{minHeight:"100vh"}} > 
-            <Galleria value={images} numVisible={5} circular 
-                showThumbnails={false} showItemNavigators  showItemNavigatorsOnHover item={itemTemplate} />
-        </div>
-          <div className="aboutcontent">
+          <div className="card" style={{ minHeight: "100vh" }}>
+            <Galleria
+              value={images}
+              numVisible={5}
+              circular
+              showThumbnails={false}
+              showItemNavigators
+              showItemNavigatorsOnHover
+              item={itemTemplate}
+            />
+          </div>
+          <div className="aboutcontent" id="items">
+            <span className="scrollMark" onClick={handlescroll}>
+              <i className="bx bx-down-arrow-alt"></i>
+            </span>
             <h1>About</h1>
             <p>
               Welcome to Elahi Impex, where innovation, luxury, and
               sustainability converge to redefine your home textile experience.
-              As one of Pakistan&apos;s fastest-growing providers of home textiles,
-              we take pride in our roots in the City of Textile, Faisalabad. Our
-              journey began with a weaving unit and has evolved into a
-              comprehensive range of home-made ups, featuring a rich tapestry of
-              textures, colors, and patterns.
+              As one of Pakistan&apos;s fastest-growing providers of home
+              textiles, we take pride in our roots in the City of Textile,
+              Faisalabad. Our journey began with a weaving unit and has evolved
+              into a comprehensive range of home-made ups, featuring a rich
+              tapestry of textures, colors, and patterns.
             </p>
             <h2>Exquisite Bed and Bath Linen:</h2>
             <p>
