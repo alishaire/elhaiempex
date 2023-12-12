@@ -50,7 +50,7 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link href="/our-brands">Brands</Link>
+              <Link href="/solar">Featured</Link>
               {/* <ul className="dropdown">
               <li>
                 <Link href="/our-brand"></Link>

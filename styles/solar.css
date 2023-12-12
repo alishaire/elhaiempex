@@ -1,0 +1,43 @@
+.solarParent{
+    padding: 70px 15px 30px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.solarImage{
+    width: 100%;
+    height: auto;
+}
+
+.solarImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.solarContent h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.solarContent h2{
+    font-size: 20px;
+    font-weight: 500
+}
+
+.solarContent p{
+    margin: 10px 0;
+}
+
+
+@media (max-width:867px) {
+.solarParent{
+
+    grid-template-columns: 1fr;
+
+}
+    
+}
