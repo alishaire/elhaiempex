@@ -220,6 +220,17 @@ const About = () => {
                   )}
                 </CountUp>
               </div>
+              <div className="counterItems">
+                <h4>Shuttless looms</h4>
+                <CountUp start={0} end={325} delay={0}>
+                  {({ countUpRef }) => (
+                    <div>
+                      <span ref={countUpRef} />
+                      <span>+</span>
+                    </div>
+                  )}
+                </CountUp>
+              </div>
             </div>
           </div>
         </div>

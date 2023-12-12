@@ -390,7 +390,7 @@ const Products = () => {
           title: "Bath & beach Towels",
           name: "Bath & beach Towels",
         },
-// =====================
+// Hotel Sliper =====================
         {
           itemImageSrc:
           "./HotelSliper/1.jpg",
