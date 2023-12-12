@@ -27,7 +27,7 @@ const Products = () => {
 
     {
       name: "Utility Bedding",
-      pic: "./products/Utility Bedding.jpg",
+      pic: "./UtilityBeding/6.jpg",
       heading: "Utility Bedding: Versatile Comfort for Every Dream ",
       desc: "Redefine your sleep sanctuary with Utility Bedding – where versatility meets unparalleled comfort, ensuring a dreamy escape with every night's rest.",
     },
@@ -58,72 +58,145 @@ const Products = () => {
     getData() {
       return [
         {
-          itemImageSrc: "/products/kitchen-1.webp",
-          thumbnailImageSrc: "/products/kitchen-1.webp",
-          alt: "Description for Image 1",
-          title: "Title 1",
+          itemImageSrc: "/Kitchen/1.jpg",
+          thumbnailImageSrc: "/Kitchen/1.jpg",
+          alt: "Kitchen Linen 1",
+          title: "Kitchen Linen 1",
           name: "Kitchen Linen",
         },
         {
-          itemImageSrc: "/products/kitchen-2.jpeg",
-          thumbnailImageSrc: "/products/kitchen-2.jpeg",
-          alt: "Description for Image 2",
-          title: "Title 2",
+          itemImageSrc: "/Kitchen/2.jpg",
+          thumbnailImageSrc: "/Kitchen/2.jpg",
+          alt: "Kitchen Linen 2",
+          title: "Kitchen Linen 2",
           name: "Kitchen Linen",
         },
         {
-          itemImageSrc:
-            "https://img.freepik.com/free-photo/blue-platter-popcorn-candy-neatly-folded-towel-line-flowers-marble-table_114579-56535.jpg?size=626&ext=jpg&ga=GA1.1.1839979533.1700575049&semt=ais",
-          thumbnailImageSrc:
-            "https://img.freepik.com/free-photo/blue-platter-popcorn-candy-neatly-folded-towel-line-flowers-marble-table_114579-56535.jpg?size=626&ext=jpg&ga=GA1.1.1839979533.1700575049&semt=ais",
-          alt: "Description for Image 3",
-          title: "Title 3",
+          itemImageSrc:"/Kitchen/3.jpg",
+          thumbnailImageSrc:"/Kitchen/3.jpg",
+          alt: "Kitchen Linen 3",
+          title: "Kitchen Linen 3",
           name: "Kitchen Linen",
         },
         {
-          itemImageSrc: "/products/kitchen-4.jpg",
-          thumbnailImageSrc: "/products/kitchen-4.jpg",
-          alt: "Description for Image 4",
-          title: "Title 4",
+          itemImageSrc: "/Kitchen/4.jpg",
+          thumbnailImageSrc: "/Kitchen/4.jpg",
+          alt: "Kitchen Linen Image 4",
+          title: "Kitchen Linen 4",
           name: "Kitchen Linen",
         },
         {
-          itemImageSrc:
-            "https://img.freepik.com/free-photo/folded-napkin-wooden-table_1373-67.jpg?size=626&ext=jpg&ga=GA1.1.1839979533.1700575049&semt=ais",
-          thumbnailImageSrc:
-            "https://img.freepik.com/free-photo/folded-napkin-wooden-table_1373-67.jpg?size=626&ext=jpg&ga=GA1.1.1839979533.1700575049&semt=ais",
-          alt: "Description for Image 5",
-          title: "Title 5",
+          itemImageSrc:"/Kitchen/5.jpg",
+          thumbnailImageSrc:"/Kitchen/5.jpg",
+          alt: "Kitchen Linen 5",
+          title: "Kitchen Linen 5",
           name: "Kitchen Linen",
         },
         {
-          itemImageSrc:
-            "https://img.freepik.com/free-photo/bath-towel_1203-3129.jpg?w=826&t=st=1701693303~exp=1701693903~hmac=d64bb478409ea1ed43c0e5d63ff6dc2e4d8d5abe7a6890443870cd3edb6a461b",
-          thumbnailImageSrc:
-            "https://img.freepik.com/free-photo/bath-towel_1203-3129.jpg?w=826&t=st=1701693303~exp=1701693903~hmac=d64bb478409ea1ed43c0e5d63ff6dc2e4d8d5abe7a6890443870cd3edb6a461b",
-          alt: "Description for Image 6",
-          title: "Title 6",
+          itemImageSrc:"/Kitchen/6.jpg",
+          thumbnailImageSrc:"/Kitchen/6.jpg",
+          alt: "Kitchen Linen 6",
+          title: "Kitchen Linen 6",
           name: "Kitchen Linen",
         },
         // ------
 
         {
+          itemImageSrc: "/LabCoat/7.jpg",
+          thumbnailImageSrc: "/LabCoat/7.jpg",
+          alt: "Lab Coat for Image 1",
+          title: "Lab Coat 7",
+          name: "Lab Coat",
+        },
+        {
+          itemImageSrc: "/LabCoat/2.jpg",
+          thumbnailImageSrc: "/LabCoat/2.jpg",
+          alt: "Lab Coat for Image 2",
+          title: "Lab Coat 2",
+          name: "Lab Coat",
+        },
+        {
+          itemImageSrc: "/LabCoat/3.jpg",
+          thumbnailImageSrc: "/LabCoat/3.jpg",
+          alt: "Lab Coat for Image 3",
+          title: "Lab Coat 3",
+          name: "Lab Coat",
+        },
+        {
+          itemImageSrc: "/LabCoat/4.jpg",
+          thumbnailImageSrc: "/LabCoat/4.jpg",
+          alt: "Lab Coat for Image 4",
+          title: "Lab Coat 4",
+          name: "Lab Coat",
+        },
+        {
+          itemImageSrc: "/LabCoat/5.jpg",
+          thumbnailImageSrc: "/LabCoat/5.jpg",
+          alt: "Lab Coat for Image 5",
+          title: "Lab Coat 5",
+          name: "Lab Coat",
+        },
+        {
+          itemImageSrc: "/LabCoat/6.jpg",
+          thumbnailImageSrc: "/LabCoat/6.jpg",
+          alt: "Lab Coat for Image 6",
+          title: "Lab Coat 6",
+          name: "Lab Coat",
+        },
+// ==============
+        {
           itemImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria7.jpg",
+          "./UtilityBeding/1.jpg",
           thumbnailImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria7s.jpg",
-          alt: "Description for Image 7",
-          title: "Title 7",
-          name: "Sheets",
+          "./UtilityBeding/2.jpg",
+          alt: "Utility Bedding for Image",
+          title: "Utility Bedding",
+          name: "Utility Bedding",
         },
         {
           itemImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria8.jpg",
+          "./UtilityBeding/3.jpg",
           thumbnailImageSrc:
-            "https://primefaces.org/cdn/primereact/images/galleria/galleria8s.jpg",
-          alt: "Description for Image 8",
-          title: "Title 8",
-          name: "Sheets",
+          "./UtilityBeding/3.jpg",
+          alt: "Utility Bedding for Image",
+          title: "Utility Bedding",
+          name: "Utility Bedding",
+        },
+        {
+          itemImageSrc:
+          "./UtilityBeding/4.jpg",
+          thumbnailImageSrc:
+          "./UtilityBeding/4.jpg",
+          alt: "Utility Bedding for Image",
+          title: "Utility Bedding",
+          name: "Utility Bedding",
+        },
+        {
+          itemImageSrc:
+          "./UtilityBeding/5.jpg",
+          thumbnailImageSrc:
+          "./UtilityBeding/5.jpg",
+          alt: "Utility Bedding for Image",
+          title: "Utility Bedding",
+          name: "Utility Bedding",
+        },
+        {
+          itemImageSrc:
+          "./UtilityBeding/7.jpg",
+          thumbnailImageSrc:
+          "./UtilityBeding/7.jpg",
+          alt: "Utility Bedding for Image",
+          title: "Utility Bedding",
+          name: "Utility Bedding",
+        },
+        {
+          itemImageSrc:
+          "./UtilityBeding/6.jpg",
+          thumbnailImageSrc:
+          "./UtilityBeding/6.jpg",
+          alt: "Utility Bedding for Image",
+          title: "Utility Bedding",
+          name: "Utility Bedding",
         },
         {
           itemImageSrc:
@@ -220,7 +293,7 @@ const Products = () => {
 
   const itemTemplate = (item) => {
     return (
-      <img src={item.itemImageSrc} alt={item.alt} style={{ width: "100%" }} />
+      <img src={item.itemImageSrc} alt={item.alt} style={{ width: "100%", height:"50vh", objectFit:"cover" }} />
     );
   };
 

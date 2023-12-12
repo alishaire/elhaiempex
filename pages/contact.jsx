@@ -98,6 +98,11 @@ const Contact = () => {
         <div className="card" style={{minHeight:"100vh"}} > 
             <Galleria value={images} numVisible={5} circular 
                 showThumbnails={false} showItemNavigators  showItemNavigatorsOnHover item={itemTemplate} />
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.0148750966296!2d73.03574457602451!3d31.496274948331326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392241c98d5ab473%3A0xab4c7bb4a58f66b0!2sElahi%20Impex!5e0!3m2!1sen!2s!4v1702292982093!5m2!1sen!2s"  style={{border:0, width:"100%",height:"25%", marginTop:"10px"}} allowFullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+
+
         </div>
           <div className="contact-content" >
             <span className="scrollMark" onClick={handlescroll}><i className='bx bx-down-arrow-alt'></i></span>
@@ -124,11 +129,13 @@ const Contact = () => {
               </p>
               <div className="social-email">
                 <i className="bx bx-envelope"></i>
-                <Link href={"/"}>customersupport@elahiimpex.com</Link>
+            
+                <a href={"mailto:export@elahiimpex.com"}>export@elahiimpex.com</a>
               </div>
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
-                <span>+92-XXXX-XXXXXX</span>
+                <a href="tel:+92-41-262-8676">+92-41-262-8676</a>
+                
               </div>
             </div>
 
@@ -140,12 +147,13 @@ const Contact = () => {
                 development team:
               </p>
               <div className="social-email">
-                <i className="bx bx-envelope"></i>
-                <Link href={"/"}>loremipsum@elahiimpex.com</Link>
+              <i className="bx bx-phone"></i>
+               
+                <a href="tel:+92-304-677 2060">+92-304-677 2060</a>
               </div>
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
-                <span>+92-XXXX-XXXXXX</span>
+                <a href="tel:+92-300-797 8676">+92-300-797 8676</a>
               </div>
             </div>
 
@@ -158,11 +166,11 @@ const Contact = () => {
               </p>
               <div className="social-email">
                 <i className="bx bx-envelope"></i>
-                <Link href={"/"}>careers@elahiimpex.com</Link>
+                <a href={"mailto:elahiimpex@elahiimpex.com"}>elahiimpex@elahiimpex.com</a>
               </div>
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
-                <span>+92-XXXX-XXXXXX</span>
+                <a href="tel:+92-313-766 6799">+92-313-766 6799</a>
               </div>
             </div>
 
@@ -172,13 +180,13 @@ const Contact = () => {
                 If you are a retailer or wholesaler interested in our products,
                 please reach out to our wholesale team:
               </p>
-              <div className="social-email">
+              {/* <div className="social-email">
                 <i className="bx bx-envelope"></i>
-                <Link href={"/"}>wholesale@elahiimpex.com</Link>
-              </div>
+                <a href={"mailto:export@elahiimpex.com"}>export@elahiimpex.com</a>
+              </div> */}
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
-                <span>+92-XXXX-XXXXXX</span>
+                <a href="tel:+92-300-866 0854">+92-300-866 0854</a>
               </div>
             </div>
 
