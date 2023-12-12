@@ -104,6 +104,7 @@
 @media (max-width: 800px) {
   .aboutmain {
     grid-template-columns: 1fr;
+    height: 100%;
   }
   .counterDiv {
     grid-template-columns: 1fr 1fr 1fr;

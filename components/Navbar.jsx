@@ -42,15 +42,13 @@ const Navbar = () => {
             <li>
               <Link href="/products">Products</Link>
             </li>
-            {/* <li>
-            <Link href="/team">Team</Link>
-          </li> */}
+
             <li>
               <Link href="/manfacturing">Manfacturing</Link>
             </li>
 
             <li>
-              <Link href="/our-brands">Brands</Link>
+              <Link href="/solar">Featured</Link>
               {/* <ul className="dropdown">
               <li>
                 <Link href="/our-brand"></Link>
