@@ -139,11 +139,13 @@ const Contact = () => {
               </p>
               <div className="social-email">
                 <i className="bx bx-envelope"></i>
-                <Link href={"/"}>customersupport@elahiimpex.com</Link>
+            
+                <a href={"mailto:export@elahiimpex.com"}>export@elahiimpex.com</a>
               </div>
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
-                <span>+92-XXXX-XXXXXX</span>
+                <a href="tel:+92-41-262-8676">+92-41-262-8676</a>
+                
               </div>
             </div>
 
@@ -155,12 +157,13 @@ const Contact = () => {
                 development team:
               </p>
               <div className="social-email">
-                <i className="bx bx-envelope"></i>
-                <Link href={"/"}>loremipsum@elahiimpex.com</Link>
+              <i className="bx bx-phone"></i>
+               
+                <a href="tel:+92-304-677 2060">+92-304-677 2060</a>
               </div>
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
-                <span>+92-XXXX-XXXXXX</span>
+                <a href="tel:+92-300-797 8676">+92-300-797 8676</a>
               </div>
             </div>
 
@@ -173,11 +176,11 @@ const Contact = () => {
               </p>
               <div className="social-email">
                 <i className="bx bx-envelope"></i>
-                <Link href={"/"}>careers@elahiimpex.com</Link>
+                <a href={"mailto:elahiimpex@elahiimpex.com"}>elahiimpex@elahiimpex.com</a>
               </div>
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
-                <span>+92-XXXX-XXXXXX</span>
+                <a href="tel:+92-313-766 6799">+92-313-766 6799</a>
               </div>
             </div>
 
@@ -187,13 +190,13 @@ const Contact = () => {
                 If you are a retailer or wholesaler interested in our products,
                 please reach out to our wholesale team:
               </p>
-              <div className="social-email">
+              {/* <div className="social-email">
                 <i className="bx bx-envelope"></i>
-                <Link href={"/"}>wholesale@elahiimpex.com</Link>
-              </div>
+                <a href={"mailto:export@elahiimpex.com"}>export@elahiimpex.com</a>
+              </div> */}
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
-                <span>+92-XXXX-XXXXXX</span>
+                <a href="tel:+92-300-866 0854">+92-300-866 0854</a>
               </div>
             </div>
 
