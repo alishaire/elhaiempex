@@ -35,8 +35,6 @@ export default function Home() {
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
-
-    
     slidesToScroll: 1,
     arrows: true,
     fade: true,
@@ -47,7 +45,6 @@ export default function Home() {
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 3000,
-    verticle:true
   };
 
   return (
@@ -61,14 +58,11 @@ export default function Home() {
 
       <main className="homeParent">
         <Slider {...settings} className="sliderParent">
-
-          
           <div className="slide-1 slide">
             <div className="header_below">
               <div className="slideContent">
                 <div className="info">
                   <div className="headingdiv">
-                    {/* <Image width={600} height={200} src="/images/logo-mona.png" alt="" /> */}
                     <h1>Bedding</h1>
                   </div>
                   <q>
@@ -85,8 +79,7 @@ export default function Home() {
               <div className="slideContent">
                 <div className="info">
                   <div className="headingdiv">
-                    {/* <Image width={600} height={200} src="/images/logo-mona.png" alt="" /> */}
-                    <h1>Bathdecore</h1>
+                    <h1>Bath Accessories</h1>
                   </div>
                   <q>
                     The world around us is constantly changing and so must we…
@@ -102,9 +95,7 @@ export default function Home() {
               <div className="slideContent">
                 <div className="info">
                   <div className="headingdiv">
-                    {/* <Image width={600} height={200} src="/images/logo-mona.png" alt="" /> */}
-
-                    <h1>Bath and Beach</h1>
+                    <h1>Bath & beach Towels</h1>
                   </div>
                   <q>
                     The world around us is constantly changing and so must we…
@@ -120,7 +111,6 @@ export default function Home() {
               <div className="slideContent">
                 <div className="info">
                   <div className="headingdiv">
-                    {/* <Image width={600} height={200} src="/images/logo-mona.png" alt="" /> */}
 
                     <h1>Bedding With Window</h1>
                   </div>
@@ -138,9 +128,7 @@ export default function Home() {
               <div className="slideContent">
                 <div className="info">
                   <div className="headingdiv">
-                    {/* <Image width={600} height={200} src="/images/logo-mona.png" alt="" /> */}
-
-                    <h1>Kitchen</h1>
+                    <h1>Kitchen Linen</h1>
                   </div>
                   <q>
                     The world around us is constantly changing and so must we…
@@ -156,7 +144,6 @@ export default function Home() {
               <div className="slideContent">
                 <div className="info">
                   <div className="headingdiv">
-                    {/* <Image width={600} height={200} src="/images/logo-mona.png" alt="" /> */}
 
                     <h1>Lab Coats</h1>
                   </div>
@@ -174,7 +161,6 @@ export default function Home() {
               <div className="slideContent">
                 <div className="info">
                   <div className="headingdiv">
-                    {/* <Image width={600} height={200} src="/images/logo-mona.png" alt="" /> */}
 
                     <h1>Utility Bedding</h1>
                   </div>
@@ -192,7 +178,7 @@ export default function Home() {
               <div className="slideContent">
                 <div className="info">
                   <div className="headingdiv">
-                   <h1>Window Treatment</h1>
+                    <h1>Window Treatments</h1>
                   </div>
                   <q>
                     The world around us is constantly changing and so must we…
@@ -208,7 +194,7 @@ export default function Home() {
               <div className="slideContent">
                 <div className="info">
                   <div className="headingdiv">
-                   <h1>Hotel Slippers</h1>
+                    <h1>Hotel Slippers</h1>
                   </div>
                   <q>
                     The world around us is constantly changing and so must we…
@@ -218,16 +204,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-
-
-
-
-
-
-
-
-
         </Slider>
       </main>
     </>

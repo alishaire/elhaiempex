@@ -37,7 +37,9 @@
 }
 .navbar nav ul li {
   padding: 7px 20px;
-  position: relative;
+
+
+
 }
 
 .dropdown{
@@ -65,6 +67,8 @@ opacity: 1;
   color: white;
   text-decoration: none;
   transition: 0.3s;
+  position: relative;
+
 
 }
 
@@ -74,18 +78,18 @@ opacity: 1;
   content: "";
   position: absolute;
   border: 1px solid transparent;
-  height: 0.3px;
-    bottom: 5px;
-  left: 15px;
+  bottom: -2px;
+  left: 0;
   width: 0%;
   transition: 0.3s all ease-in-out;
+  opacity: 0;
 }
 
 .navbar nav ul li a:hover::after{
  
-  height: 0.3px;
   background-color: white;
-  width: 70%;
+  width: 100%;
+  opacity: 1;
 }
 
 
