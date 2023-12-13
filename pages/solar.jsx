@@ -28,7 +28,7 @@ export const PhotoService = {
     return Promise.resolve(this.getData());
   },
 };
-const solar = () => {
+const Solar = () => {
   const [images, setImages] = useState(null);
 
   useEffect(() => {
@@ -123,4 +123,4 @@ const solar = () => {
   );
 };
 
-export default solar;
+export default Solar;
