@@ -35,6 +35,8 @@ export default function Home() {
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
+
+    
     slidesToScroll: 1,
     arrows: true,
     fade: true,
@@ -45,6 +47,7 @@ export default function Home() {
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 3000,
+    verticle:true
   };
 
   return (
@@ -58,6 +61,8 @@ export default function Home() {
 
       <main className="homeParent">
         <Slider {...settings} className="sliderParent">
+
+          
           <div className="slide-1 slide">
             <div className="header_below">
               <div className="slideContent">
@@ -109,6 +114,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+
           <div className="slide-04 slide">
             <div className=" header_below">
               <div className="slideContent">
@@ -126,6 +132,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+
           <div className="slide-05 slide">
             <div className=" header_below">
               <div className="slideContent">
@@ -143,6 +150,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+
           <div className="slide-06 slide">
             <div className=" header_below">
               <div className="slideContent">
@@ -160,6 +168,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+
           <div className="slide-07 slide">
             <div className=" header_below">
               <div className="slideContent">
@@ -177,6 +186,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+
           <div className="slide-08 slide">
             <div className=" header_below">
               <div className="slideContent">
@@ -192,6 +202,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+
           <div className="slide-09 slide">
             <div className=" header_below">
               <div className="slideContent">
@@ -207,6 +218,16 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+
+
+
+
+
+
+
+
+
         </Slider>
       </main>
     </>
