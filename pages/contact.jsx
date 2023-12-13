@@ -197,7 +197,7 @@ const Contact = () => {
               </div> */}
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
-                <a href="tel:+92-300-866 0854">+92-300-866 0854</a>
+                <a href="tel:+923218660550">+923218660550</a>
               </div>
             </div>
 

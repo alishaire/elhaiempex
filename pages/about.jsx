@@ -231,6 +231,17 @@ const About = () => {
                   )}
                 </CountUp>
               </div>
+              <div className="counterItems">
+                <h4>Auto Looms</h4>
+                <CountUp start={0} end={80} delay={0}>
+                  {({ countUpRef }) => (
+                    <div>
+                      <span ref={countUpRef} />
+                      <span>+</span>
+                    </div>
+                  )}
+                </CountUp>
+              </div>
             </div>
           </div>
         </div>
