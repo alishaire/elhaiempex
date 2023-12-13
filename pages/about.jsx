@@ -159,27 +159,27 @@ const About = () => {
             </p>
             <div className="productsdiv">
               <div className="items">
-                <i class="fa-solid fa-vest-patches"></i>
+                <i className="fa-solid fa-vest-patches"></i>
                 <span>Lab Coat</span>
               </div>
               <div className="items">
-                <i class="fa-solid fa-mitten"></i>
+                <i className="fa-solid fa-mitten"></i>
                 <span>Kitchen Linen</span>
               </div>
               <div className="items">
-                <i class="fas fa-tools"></i>
+                <i className="fas fa-tools"></i>
                 <span>Utility Bedding </span>
               </div>
               <div className="items">
-                <i class="fa-solid fa-bath"></i>
+                <i className="fa-solid fa-bath"></i>
                 <span>Bath Accessories</span>
               </div>
               <div className="items">
-                <i class="bx bxs-hard-hat"></i>
+                <i className="bx bxs-hard-hat"></i>
                 <span>Window Treatments</span>
               </div>
               <div className="items">
-                <i class="fa-solid fa-toilet-paper"></i>
+                <i className="fa-solid fa-toilet-paper"></i>
                 <span>Bath & beach Towels</span>
               </div>
             </div>
@@ -211,11 +211,22 @@ const About = () => {
               </div>
               <div className="counterItems">
                 <h4>Shuttless looms</h4>
-                <CountUp start={0} end={325} delay={0}>
+                <CountUp start={0} end={300} delay={0}>
                   {({ countUpRef }) => (
                     <div>
                       <span ref={countUpRef} />
                       <span>+</span>
+                    </div>
+                  )}
+                </CountUp>
+              </div>
+              <div className="counterItems">
+                <h4>Power</h4>
+                <CountUp start={0} end={70} delay={0}>
+                  {({ countUpRef }) => (
+                    <div>
+                      <span ref={countUpRef} />
+                      <span>%</span>
                     </div>
                   )}
                 </CountUp>

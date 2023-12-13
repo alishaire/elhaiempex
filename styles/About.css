@@ -38,8 +38,7 @@
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
-.items {
+ .items {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -61,7 +60,7 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
   padding: 40px 15px;
 }

@@ -1,9 +1,73 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Galleria } from "primereact/galleria";
+export const PhotoService = {
+  getData() {
+    return [
+      {
+        itemImageSrc: "./Solarpanel/man.jpg",
+        thumbnailImageSrc:  "./Solarpanel/man.jpg",
+        alt: "Description for Image 1",
+        title: "Title 1",
+      },
+      {
+        itemImageSrc:  "./Solarpanel/pank.jpg",
+        thumbnailImageSrc: "./Solarpanel/pank.jpg",
+        alt: "Description for Image 2",
+        title: "Title 2",
+      },
+      {
+        itemImageSrc:  "./Solarpanel/roof.jpg",
+        thumbnailImageSrc: "./Solarpanel/roof.jpg",
+        alt: "Description for Image 2",
+        title: "Title 2",
+      },
+    ];
+  },
 
-const solar = () => {
+  getImages() {
+    return Promise.resolve(this.getData());
+  },
+};
+const Solar = () => {
+  const [images, setImages] = useState(null);
+
+  useEffect(() => {
+    PhotoService.getImages().then((data) => setImages(data));
+  }, []);
+
+  const itemTemplate = (item) => {
+    return (
+      <img
+        src={item.itemImageSrc}
+        alt={item.alt}
+        style={{ width: "100%", height: "100vh", objectFit: "cover" }}
+      />
+    );
+  };
+
+  const thumbnailTemplate = (item) => {
+    return (
+      <img
+        src={item.thumbnailImageSrc}
+        alt={item.alt}
+        style={{ display: "block" }}
+      />
+    );
+  };
   return (
     <>
       <div className="solarParent">
+      <div className="card" style={{ minHeight: "100vh" }}>
+            <Galleria
+              value={images}
+              numVisible={5}
+              circular
+              showThumbnails={false}
+              showItemNavigators
+              showItemNavigatorsOnHover
+              item={itemTemplate}
+            />
+          </div>
         <div className="solarContent">
           <h1>Electric Solar Plants </h1>
           <p>
@@ -30,7 +94,7 @@ const solar = () => {
             provided by the sun, we play a role in shaping a more sustainable
             future for generations to come.
           </p>
-
+<h2>Key Highlights</h2>
           <p>
             <strong>70% Solar-Powered:</strong> A substantial portion of our
             electricity needs is met through clean and renewable solar energy,
@@ -52,13 +116,11 @@ const solar = () => {
             operations for a brighter and more sustainable world.
           </p>
         </div>
-        <div className="solarImage">
-          <img src="./solar/solarImage.jpg" alt="SOLAR PANELS ELAHI EMPEX" />
-        </div>
+    
       </div>
       <div className="solarContentBelow"></div>
     </>
   );
 };
 
-export default solar;
+export default Solar;
