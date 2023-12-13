@@ -38,8 +38,7 @@
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
-.items {
+ .items {
   display: flex;
   align-items: center;
   gap: 10px;

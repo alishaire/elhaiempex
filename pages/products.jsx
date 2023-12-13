@@ -478,7 +478,7 @@ const Products = () => {
 
   const itemTemplate = (item) => {
     return (
-      <img src={item.itemImageSrc} alt={item.alt} style={{ width: "100%", height:"50vh", objectFit:"cover" }} />
+      <img src={item.itemImageSrc} alt={item.alt} style={{ width: "100%", height:"70vh", objectFit:"cover" }} />
     );
   };
 
@@ -552,7 +552,7 @@ const Products = () => {
             responsiveOptions={responsiveOptions}
             numVisible={5}
             item={itemTemplate}
-            thumbnail={thumbnailTemplate}
+            // thumbnail={thumbnailTemplate}
             showItemNavigators
             showItemNavigatorsOnHover
             circular

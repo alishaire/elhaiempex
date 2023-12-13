@@ -144,7 +144,8 @@ const Contact = () => {
               </div>
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
-                <a href="tel:+92-41-262-8676">+92-41-262-8676</a>
+                <a href="tel: +923186187272">
+                  +923186187272</a>
                 
               </div>
             </div>
@@ -159,11 +160,11 @@ const Contact = () => {
               <div className="social-email">
               <i className="bx bx-phone"></i>
                
-                <a href="tel:+92-304-677 2060">+92-304-677 2060</a>
+                <a href="tel:+923007618550">+923007618550</a>
               </div>
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
-                <a href="tel:+92-300-797 8676">+92-300-797 8676</a>
+                <a href="tel:+923186187272">+923186187272</a>
               </div>
             </div>
 
@@ -180,7 +181,7 @@ const Contact = () => {
               </div>
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
-                <a href="tel:+92-313-766 6799">+92-313-766 6799</a>
+                <a href="tel:+923186187272">+923186187272</a>
               </div>
             </div>
 
@@ -200,20 +201,26 @@ const Contact = () => {
               </div>
             </div>
 
+            
             <div className="corpOffice">
-              <h2>Get In Touch</h2>
+              <h2>Office #1</h2>
               <p>
-                If you are a retailer or wholesaler interested in our products,
-                please reach out to our wholesale team:
+             <strong>Mill Address</strong> :Mill # 1: Rehman Abad, Factory Area, G.M. Abad Faisalabad, Pakistan
               </p>
-
+              </div>
+              <div className="corpOffice">
+              <h2>Office  #2</h2>
+              <p>
+             <strong>Mill Address #2</strong> :5-Giraiyn. besides Small Industrial Estate. Bypass Raod 5-km Toward Aminpur Bypass Office # 5, Ist Floor, Hussain Market, Near Al-Falah Bank, Yarn Market Faisalabad - Pakistan
+              </p>
               <div className="socialhandles">
-                <i className="bx bxl-facebook"></i>
-                <i className="bx bxl-twitter"></i>
-                <i className="fa-brands fa-instagram"></i>
+                <a href="">    <i className="bx bxl-facebook"></i></a>
+            <a href="">  <i className="bx bxl-twitter"></i></a>
+              <a href="">      <i className="fa-brands fa-instagram"></i></a>
+          <a href="whatsapp://send?phone=+923186187272" target="_blank" rel="noopener noreferrer">         <i className="fa-brands fa-whatsapp"></i></a>
+       
               </div>
             </div>
-
             <button onClick={() => setOpenmodel(true)}>
               Contact Us <i className="fa-solid fa-paper-plane"></i>
             </button>
