@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const Navbar = () => {
   var [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
     <div className={router.pathname === "/" ? "navbar home" : "navbar"}>
       <nav>
         <div className="logo">
-          <img src="/images/logo.png" alt="Elahi Empex" />
+          <Image height={60} width={400} src="/images/logo.png" alt="Elahi Empex" />
         </div>
         <section
           className={mobileNavOpen ? "mobilenav" : ""}
@@ -27,7 +28,7 @@ const Navbar = () => {
           <ul className={mobileNavOpen ? "active" : ""}>
             <li>
               <Link href="/">
-                <img src="/images/logo.png" alt="" />
+                <Image height={60} width={400}  src="/images/logo.png" alt="" />
               </Link>
             </li>
             <li>

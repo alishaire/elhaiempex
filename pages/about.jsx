@@ -1,48 +1,49 @@
 import React, { useState, useEffect } from "react";
 import { Galleria } from "primereact/galleria";
 import CountUp from "react-countup";
+import Image from "next/image";
 
 export const PhotoService = {
   getData() {
     return [
       {
-        itemImageSrc: "./About/Beachtowel.jpg",
+        itemImageSrc: "/About/Beachtowel.jpg",
         thumbnailImageSrc: "./About/Beachtowel.jpg",
         alt: "Description for Image 1",
         title: "Title 1",
       },
       {
-        itemImageSrc: "./About/bedroom.jpg",
+        itemImageSrc: "/About/bedroom.jpg",
         thumbnailImageSrc: "./About/Beachtowel.jpg",
         alt: "Description for Image 2",
         title: "Title 2",
       },
       {
-        itemImageSrc: "./About/Coutch.jpg",
+        itemImageSrc: "/About/Coutch.jpg",
         thumbnailImageSrc: "./About/HomeTextile.jpg",
         alt: "Description for Image 3",
         title: "Title 3",
       },
       {
-        itemImageSrc: "./About/HomeTextile.jpg",
+        itemImageSrc: "/About/HomeTextile.jpg",
         thumbnailImageSrc: "./About/Beachtowel.jpg",
         alt: "Description for Image 4",
         title: "Title 4",
       },
       {
-        itemImageSrc: "./About/hotelWindow.jpg",
+        itemImageSrc: "/About/hotelWindow.jpg",
         thumbnailImageSrc: "./About/Beachtowel.jpg",
         alt: "Description for Image 5",
         title: "Title 5",
       },
       {
-        itemImageSrc: "./About/Kitchen.jpg",
+        itemImageSrc: "/About/Kitchen.jpg",
         thumbnailImageSrc: "./About/Beachtowel.jpg",
         alt: "Description for Image 6",
         title: "Title 6",
       },
       {
-        itemImageSrc: "./About/whitebedding.jpg",
+        itemImageSrc: "/About/whitebedding.jpg",
         thumbnailImageSrc: "./About/Beachtowel.jpg",
         alt: "Description for Image 7",
         title: "Title 7",
@@ -63,7 +64,7 @@ const About = () => {
 
   const itemTemplate = (item) => {
     return (
-      <img
+      <Image height={600} width={900} 
         src={item.itemImageSrc}
         alt={item.alt}
         style={{ width: "100%", height: "100vh", objectFit: "cover" }}

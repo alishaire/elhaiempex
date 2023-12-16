@@ -1,22 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { Galleria } from "primereact/galleria";
+import Image from "next/image";
 export const PhotoService = {
   getData() {
     return [
       {
-        itemImageSrc: "./Solarpanel/man.jpg",
+        itemImageSrc: "/Solarpanel/man.jpg",
         thumbnailImageSrc:  "./Solarpanel/man.jpg",
         alt: "Description for Image 1",
         title: "Title 1",
       },
       {
-        itemImageSrc:  "./Solarpanel/pank.jpg",
+        itemImageSrc:  "/Solarpanel/pank.jpg",
         thumbnailImageSrc: "./Solarpanel/pank.jpg",
         alt: "Description for Image 2",
         title: "Title 2",
       },
       {
-        itemImageSrc:  "./Solarpanel/roof.jpg",
+        itemImageSrc:  "/Solarpanel/roof.jpg",
         thumbnailImageSrc: "./Solarpanel/roof.jpg",
         alt: "Description for Image 2",
         title: "Title 2",
@@ -37,7 +38,9 @@ const Solar = () => {
 
   const itemTemplate = (item) => {
     return (
-      <img
+      <Image
+      width={900}
+      height={900}
         src={item.itemImageSrc}
         alt={item.alt}
         style={{ width: "100%", height: "100vh", objectFit: "cover" }}

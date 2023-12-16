@@ -2,18 +2,20 @@ import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
 import { Galleria } from "primereact/galleria";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Image from "next/image";
 export const PhotoService = {
   getData() {
     return [
       {
-        itemImageSrc: "./Contact/contact1.jpg",
+        itemImageSrc: "/Contact/contact1.jpg",
         thumbnailImageSrc: "./Contact/contact1.jpg",
         alt: "Description for Image 1",
         title: "Title 1",
       },
       {
-        itemImageSrc: "./Contact/modren.jpg",
+        itemImageSrc: "/Contact/modren.jpg",
         thumbnailImageSrc: "./Contact/modren.jpg",
         alt: "Description for Image 2",
         title: "Title 2",
@@ -35,17 +37,19 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_4hzwrg6",
-        "template_xea43tt",
+        "service_hdg2fbj",
+        "template_bndm04a",
         form.current,
-        "CYeyoykc_ssRA-91-"
+        "G3U-f97Mpz-FmM4L0"
       )
       .then(
         (result) => {
-          console.log(result.text);
+          toast.success("Data submited Successfully");
+          setOpenmodel(false);
         },
         (error) => {
           console.log(error.text);
+          toast.error("Something Went Wrong !");
         }
       );
   };
@@ -79,7 +83,9 @@ const Contact = () => {
 
   const itemTemplate = (item) => {
     return (
-      <img
+      <Image
+      width={900}
+      height={900}
         src={item.itemImageSrc}
         alt={item.alt}
         style={{ width: "100%", height: "100vh", objectFit: "cover" }}
@@ -99,6 +105,7 @@ const Contact = () => {
 
   return (
     <>
+      <ToastContainer />
       <div className="contact maxpad">
         <div className="maincontact">
           <div className="card" style={{ minHeight: "100vh" }}>
@@ -139,14 +146,14 @@ const Contact = () => {
               </p>
               <div className="social-email">
                 <i className="bx bx-envelope"></i>
-            
-                <a href={"mailto:export@elahiimpex.com"}>export@elahiimpex.com</a>
+
+                <a href={"mailto:export@elahiimpex.com"}>
+                  export@elahiimpex.com
+                </a>
               </div>
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
-                <a href="tel: +923186187272">
-                  +923186187272</a>
-                
+                <a href="tel: +923186187272">+923186187272</a>
               </div>
             </div>
 
@@ -158,8 +165,8 @@ const Contact = () => {
                 development team:
               </p>
               <div className="social-email">
-              <i className="bx bx-phone"></i>
-               
+                <i className="bx bx-phone"></i>
+
                 <a href="tel:+923007618550">+923007618550</a>
               </div>
               <div className="social-phone">
@@ -177,7 +184,9 @@ const Contact = () => {
               </p>
               <div className="social-email">
                 <i className="bx bx-envelope"></i>
-                <a href={"mailto:elahiimpex@elahiimpex.com"}>elahiimpex@elahiimpex.com</a>
+                <a href={"mailto:elahiimpex@elahiimpex.com"}>
+                  elahiimpex@elahiimpex.com
+                </a>
               </div>
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
@@ -197,28 +206,50 @@ const Contact = () => {
               </div> */}
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
+                <a href="tel:+923218660550">+923008660854</a>
+              </div>
+              <div className="social-phone">
+                <i className="bx bx-phone"></i>
                 <a href="tel:+923218660550">+923218660550</a>
               </div>
             </div>
 
-            
             <div className="corpOffice">
               <h2>Office #1</h2>
               <p>
-             <strong>Mill Address</strong> :Mill # 1: Rehman Abad, Factory Area, G.M. Abad Faisalabad, Pakistan
+                <strong>Mill Address</strong> :Mill # 1: Rehman Abad, Factory
+                Area, G.M. Abad Faisalabad, Pakistan
               </p>
-              </div>
-              <div className="corpOffice">
-              <h2>Office  #2</h2>
+            </div>
+            <div className="corpOffice">
+              <h2>Office #2</h2>
               <p>
-             <strong>Mill Address #2</strong> :5-Giraiyn. besides Small Industrial Estate. Bypass Raod 5-km Toward Aminpur Bypass Office # 5, Ist Floor, Hussain Market, Near Al-Falah Bank, Yarn Market Faisalabad - Pakistan
+                <strong>Mill Address #2</strong> :5-Giraiyn. besides Small
+                Industrial Estate. Bypass Raod 5-km Toward Aminpur Bypass Office
+                # 5, Ist Floor, Hussain Market, Near Al-Falah Bank, Yarn Market
+                Faisalabad - Pakistan
               </p>
               <div className="socialhandles">
-                <a href="">    <i className="bx bxl-facebook"></i></a>
-            <a href="">  <i className="bx bxl-twitter"></i></a>
-              <a href="">      <i className="fa-brands fa-instagram"></i></a>
-          <a href="whatsapp://send?phone=+923186187272" target="_blank" rel="noopener noreferrer">         <i className="fa-brands fa-whatsapp"></i></a>
-       
+                <a href="">
+                  {" "}
+                  <i className="bx bxl-facebook"></i>
+                </a>
+                <a href="">
+                  {" "}
+                  <i className="bx bxl-twitter"></i>
+                </a>
+                <a href="">
+                  {" "}
+                  <i className="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="whatsapp://send?phone=+923186187272"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <i className="fa-brands fa-whatsapp"></i>
+                </a>
               </div>
             </div>
             <button onClick={() => setOpenmodel(true)}>
@@ -296,7 +327,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <textarea
-                    name=""
+                    name="message"
                     id=""
                     cols="30"
                     placeholder="Enter Your Comment"

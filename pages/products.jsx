@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Galleria } from "primereact/galleria";
+import Image from "next/image";
 const Products = () => {
   const [openmodel, setOpenmodel] = useState(false);
   useEffect(() => {
@@ -12,14 +13,14 @@ const Products = () => {
   const sliderImages = [
     {
       name: "Kitchen Linen",
-      pic: "./products/KitchenLinen.jpg",
+      pic: "/products/KitchenLinen.jpg",
       heading: "Kitchen Linen: Where Culinary Elegance Meets Practicality ",
       desc: "Unleash the chef within you and adorn your kitchen with our Kitchen Linen – the perfect blend of style and functionality for your culinary haven.",
     },
 
     {
       name: "Lab Coat",
-      pic: "./products/LabCoat.jpg",
+      pic: "/products/LabCoat.jpg",
 
       heading: "Lab Coat: Elevate Professionalism, Embrace Comfort ",
       desc: "Step into excellence with our Lab Coat – a symbol of precision and comfort, tailored for those who redefine standards in the professional realm.",
@@ -27,35 +28,35 @@ const Products = () => {
 
     {
       name: "Utility Bedding",
-      pic: "./UtilityBeding/6.jpg",
+      pic: "/UtilityBeding/6.jpg",
       heading: "Utility Bedding: Versatile Comfort for Every Dream ",
       desc: "Redefine your sleep sanctuary with Utility Bedding – where versatility meets unparalleled comfort, ensuring a dreamy escape with every night's rest.",
     },
 
     {
       name: "Bath Accessories",
-      pic: "./products/Bedding with window.jpg",
+      pic: "/products/Bedding with window.jpg",
       heading: "Bath Accessories: Luxe Details for Your Pampering Rituals ",
       desc: "Elevate your bath experience with Bath Accessories – intricate details that turn every moment into a spa-like indulgence, creating a haven of relaxation.",
     },
 
     {
       name: "Window Treatments",
-      pic: "./products/Window treatment.jpg",
+      pic: "/products/Window treatment.jpg",
 
       heading: "Window Treatments: Unveiling Elegance, One Window at a Time ",
       desc: "Transform your living spaces with Window Treatments – where elegance meets functionality, creating a picturesque ambiance that reflects your style.",
     },
     {
       name: "Bath & beach Towels",
-      pic: "./products/Bath & Beach.jpg",
+      pic: "/products/Bath & Beach.jpg",
 
       heading: "Bath & Beach Towels: Dive into Luxury, Embrace the Sun ",
       desc: "Whether at the beach or in your home oasis, our Bath & Beach Towels invite you to dive into luxury and embrace the warmth of the sun with every use.",
     },
     {
       name: "Hotel Slipper",
-      pic: "./products/hotelsliper.jpg",
+      pic: "/products/hotelsliper.jpg",
 
       heading: "Hotel Slippers: Walk the Luxury Path ",
       desc: "Step into a world of opulence with our Hotel Slippers, where each step is a journey in comfort and sophistication.",
@@ -154,45 +155,45 @@ const Products = () => {
 // UtilityBeding ==============
         {
           itemImageSrc:
-          "./UtilityBeding/1.jpg",
+          "/UtilityBeding/1.jpg",
           thumbnailImageSrc:
-          "./UtilityBeding/2.jpg",
+          "/UtilityBeding/2.jpg",
           alt: "Utility Bedding for Image",
           title: "Utility Bedding",
           name: "Utility Bedding",
         },
         {
           itemImageSrc:
-          "./UtilityBeding/3.jpg",
+          "/UtilityBeding/3.jpg",
           thumbnailImageSrc:
-          "./UtilityBeding/3.jpg",
+          "/UtilityBeding/3.jpg",
           alt: "Utility Bedding for Image",
           title: "Utility Bedding",
           name: "Utility Bedding",
         },
         {
           itemImageSrc:
-          "./UtilityBeding/4.jpg",
+          "/UtilityBeding/4.jpg",
           thumbnailImageSrc:
-          "./UtilityBeding/4.jpg",
+          "/UtilityBeding/4.jpg",
           alt: "Utility Bedding for Image",
           title: "Utility Bedding",
           name: "Utility Bedding",
         },
         {
           itemImageSrc:
-          "./UtilityBeding/5.jpg",
+          "/UtilityBeding/5.jpg",
           thumbnailImageSrc:
-          "./UtilityBeding/5.jpg",
+          "/UtilityBeding/5.jpg",
           alt: "Utility Bedding for Image",
           title: "Utility Bedding",
           name: "Utility Bedding",
         },
         {
           itemImageSrc:
-          "./UtilityBeding/7.jpg",
+          "/UtilityBeding/7.jpg",
           thumbnailImageSrc:
-          "./UtilityBeding/7.jpg",
+          "/UtilityBeding/7.jpg",
           alt: "Utility Bedding for Image",
           title: "Utility Bedding",
           name: "Utility Bedding",
@@ -200,9 +201,9 @@ const Products = () => {
         
         {
           itemImageSrc:
-          "./UtilityBeding/6.jpg",
+          "/UtilityBeding/6.jpg",
           thumbnailImageSrc:
-          "./UtilityBeding/6.jpg",
+          "/UtilityBeding/6.jpg",
           alt: "Utility Bedding for Image",
           title: "Utility Bedding",
           name: "Utility Bedding",
@@ -210,63 +211,63 @@ const Products = () => {
         // WindowTreatment =====================
         {
           itemImageSrc:
-          "./WindowTreatment/1.jpg",
+          "/WindowTreatment/1.jpg",
           thumbnailImageSrc:
-          "./WindowTreatment/1.jpg",
+          "/WindowTreatment/1.jpg",
           alt: "Window Treatments for Image 9",
           title: "Window Treatments ",
           name: "Window Treatments",
         },
         {
           itemImageSrc:
-          "./WindowTreatment/2.jpg",
+          "/WindowTreatment/2.jpg",
           thumbnailImageSrc:
-          "./WindowTreatment/2.jpg",
+          "/WindowTreatment/2.jpg",
           alt: "Window Treatments for Image 9",
           title: "Window Treatments ",
           name: "Window Treatments",
         },
         {
           itemImageSrc:
-          "./WindowTreatment/3.jpg",
+          "/WindowTreatment/3.jpg",
           thumbnailImageSrc:
-          "./WindowTreatment/3.jpg",
+          "/WindowTreatment/3.jpg",
           alt: "Window Treatments for Image 9",
           title: "Window Treatments ",
           name: "Window Treatments",
         },
         {
           itemImageSrc:
-          "./WindowTreatment/4.jpg",
+          "/WindowTreatment/4.jpg",
           thumbnailImageSrc:
-          "./WindowTreatment/4.jpg",
+          "/WindowTreatment/4.jpg",
           alt: "Window Treatments for Image 9",
           title: "Window Treatments ",
           name: "Window Treatments",
         },
         {
           itemImageSrc:
-          "./WindowTreatment/5.jpg",
+          "/WindowTreatment/5.jpg",
           thumbnailImageSrc:
-          "./WindowTreatment/5.jpg",
+          "/WindowTreatment/5.jpg",
           alt: "Window Treatments for Image 9",
           title: "Window Treatments ",
           name: "Window Treatments",
         },
         {
           itemImageSrc:
-          "./WindowTreatment/6.jpg",
+          "/WindowTreatment/6.jpg",
           thumbnailImageSrc:
-          "./WindowTreatment/6.jpg",
+          "/WindowTreatment/6.jpg",
           alt: "Window Treatments for Image 9",
           title: "Window Treatments ",
           name: "Window Treatments",
         },
         {
           itemImageSrc:
-          "./WindowTreatment/7.jpg",
+          "/WindowTreatment/7.jpg",
           thumbnailImageSrc:
-          "./WindowTreatment/7.jpg",
+          "/WindowTreatment/7.jpg",
           alt: "Window Treatments for Image 9",
           title: "Window Treatments ",
           name: "Window Treatments",
@@ -274,54 +275,54 @@ const Products = () => {
         //BathAccessories ================
         {
           itemImageSrc:
-          "./BathAccessories/1.jpg",
+          "/BathAccessories/1.jpg",
           thumbnailImageSrc:
-          "./BathAccessories/1.jpg",
+          "/BathAccessories/1.jpg",
           alt: "Bath Accessories",
           title: "Bath Accessories",
           name: "Bath Accessories",
         },
         {
           itemImageSrc:
-          "./BathAccessories/2.jpg",
+          "/BathAccessories/2.jpg",
           thumbnailImageSrc:
-          "./BathAccessories/2.jpg",
+          "/BathAccessories/2.jpg",
           alt: "Bath Accessories",
           title: "Bath Accessories",
           name: "Bath Accessories",
         },
         {
           itemImageSrc:
-          "./BathAccessories/3.jpg",
+          "/BathAccessories/3.jpg",
           thumbnailImageSrc:
-          "./BathAccessories/3.jpg",
+          "/BathAccessories/3.jpg",
           alt: "Bath Accessories",
           title: "Bath Accessories",
           name: "Bath Accessories",
         },
         {
           itemImageSrc:
-          "./BathAccessories/4.jpg",
+          "/BathAccessories/4.jpg",
           thumbnailImageSrc:
-          "./BathAccessories/4.jpg",
+          "/BathAccessories/4.jpg",
           alt: "Bath Accessories",
           title: "Bath Accessories",
           name: "Bath Accessories",
         },
         {
           itemImageSrc:
-          "./BathAccessories/5.jpg",
+          "/BathAccessories/5.jpg",
           thumbnailImageSrc:
-          "./BathAccessories/5.jpg",
+          "/BathAccessories/5.jpg",
           alt: "Bath Accessories",
           title: "Bath Accessories",
           name: "Bath Accessories",
         },
         {
           itemImageSrc:
-          "./BathAccessories/6.jpg",
+          "/BathAccessories/6.jpg",
           thumbnailImageSrc:
-          "./BathAccessories/6.jpg",
+          "/BathAccessories/6.jpg",
           alt: "Bath Accessories",
           title: "Bath Accessories",
           name: "Bath Accessories",
@@ -329,63 +330,63 @@ const Products = () => {
 // Bath & Beach ======================
         {
           itemImageSrc:
-          "./BathBeach/1.jpg",
+          "/BathBeach/1.jpg",
           thumbnailImageSrc:
-          "./BathBeach/1.jpg",
+          "/BathBeach/1.jpg",
           alt: "Bath & beach Towels",
           title: "Bath & beach Towels",
           name: "Bath & beach Towels",
         },
         {
           itemImageSrc:
-          "./BathBeach/2.jpg",
+          "/BathBeach/2.jpg",
           thumbnailImageSrc:
-          "./BathBeach/2.jpg",
+          "/BathBeach/2.jpg",
           alt: "Bath & beach Towels",
           title: "Bath & beach Towels",
           name: "Bath & beach Towels",
         },
         {
           itemImageSrc:
-          "./BathBeach/3.jpg",
+          "/BathBeach/3.jpg",
           thumbnailImageSrc:
-          "./BathBeach/3.jpg",
+          "/BathBeach/3.jpg",
           alt: "Bath & beach Towels",
           title: "Bath & beach Towels",
           name: "Bath & beach Towels",
         },
         {
           itemImageSrc:
-          "./BathBeach/4.jpg",
+          "/BathBeach/4.jpg",
           thumbnailImageSrc:
-          "./BathBeach/4.jpg",
+          "/BathBeach/4.jpg",
           alt: "Bath & beach Towels",
           title: "Bath & beach Towels",
           name: "Bath & beach Towels",
         },
         {
           itemImageSrc:
-          "./BathBeach/5.jpg",
+          "/BathBeach/5.jpg",
           thumbnailImageSrc:
-          "./BathBeach/5.jpg",
+          "/BathBeach/5.jpg",
           alt: "Bath & beach Towels",
           title: "Bath & beach Towels",
           name: "Bath & beach Towels",
         },
         {
           itemImageSrc:
-          "./BathBeach/6.jpg",
+          "/BathBeach/6.jpg",
           thumbnailImageSrc:
-          "./BathBeach/6.jpg",
+          "/BathBeach/6.jpg",
           alt: "Bath & beach Towels",
           title: "Bath & beach Towels",
           name: "Bath & beach Towels",
         },
         {
           itemImageSrc:
-          "./BathBeach/7.jpg",
+          "/BathBeach/7.jpg",
           thumbnailImageSrc:
-          "./BathBeach/7.jpg",
+          "/BathBeach/7.jpg",
           alt: "Bath & beach Towels",
           title: "Bath & beach Towels",
           name: "Bath & beach Towels",
@@ -393,54 +394,54 @@ const Products = () => {
 // Hotel Sliper =====================
         {
           itemImageSrc:
-          "./HotelSliper/1.jpg",
+          "/HotelSliper/1.jpg",
           thumbnailImageSrc:
-          "./HotelSliper/1.jpg",
+          "/HotelSliper/1.jpg",
           alt: "Hotel Slipper",
           title: "Hotel Slipper",
           name: "Hotel Slipper",
         },
         {
           itemImageSrc:
-          "./HotelSliper/2.jpg",
+          "/HotelSliper/2.jpg",
           thumbnailImageSrc:
-          "./HotelSliper/2.jpg",
+          "/HotelSliper/2.jpg",
           alt: "Hotel Slipper",
           title: "Hotel Slipper",
           name: "Hotel Slipper",
         },
         {
           itemImageSrc:
-          "./HotelSliper/3.jpg",
+          "/HotelSliper/3.jpg",
           thumbnailImageSrc:
-          "./HotelSliper/3.jpg",
+          "/HotelSliper/3.jpg",
           alt: "Hotel Slipper",
           title: "Hotel Slipper",
           name: "Hotel Slipper",
         },
         {
           itemImageSrc:
-          "./HotelSliper/4.jpg",
+          "/HotelSliper/4.jpg",
           thumbnailImageSrc:
-          "./HotelSliper/4.jpg",
+          "/HotelSliper/4.jpg",
           alt: "Hotel Slipper",
           title: "Hotel Slipper",
           name: "Hotel Slipper",
         },
         {
           itemImageSrc:
-          "./HotelSliper/5.jpg",
+          "/HotelSliper/5.jpg",
           thumbnailImageSrc:
-          "./HotelSliper/5.jpg",
+          "/HotelSliper/5.jpg",
           alt: "Hotel Slipper",
           title: "Hotel Slipper",
           name: "Hotel Slipper",
         },
         {
           itemImageSrc:
-          "./HotelSliper/6.jpg",
+          "/HotelSliper/6.jpg",
           thumbnailImageSrc:
-          "./HotelSliper/6.jpg",
+          "/HotelSliper/6.jpg",
           alt: "Hotel Slipper",
           title: "Hotel Slipper",
           name: "Hotel Slipper",
@@ -478,7 +479,7 @@ const Products = () => {
 
   const itemTemplate = (item) => {
     return (
-      <img src={item.itemImageSrc} alt={item.alt} style={{ width: "100%", height:"70vh", objectFit:"cover" }} />
+      <Image className="productinnerimage" height={500} width={1000}  src={item.itemImageSrc} alt={item.alt}  />
     );
   };
 
@@ -525,7 +526,7 @@ const Products = () => {
             {sliderImages.map((v, i) => (
               <div className="itemImage" key={i}>
                 <span>{v.name}</span>
-                <img src={v.pic} alt="Product images" />
+                <Image height={60} width={900}  src={v.pic} alt="Product images" />
 
                 <div className="contentOverlay">
                   <h2>{v.heading}</h2>

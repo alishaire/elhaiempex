@@ -16,7 +16,11 @@
   margin-bottom: 20px;
   padding: 0 15px;
 }
-
+.productinnerimage{
+  width: 100%;
+ height: 70vh !important;
+  object-fit: cover;
+}
 .featuredProduct {
   width: 100%;
   height: 100vh;
