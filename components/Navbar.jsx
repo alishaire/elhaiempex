@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className={router.pathname === "/" ? "navbar home" : "navbar"}>
       <nav>
         <div className="logo">
-          <Image height={60} width={400} src="/images/logo.png" alt="Elahi Empex" />
+          <img src="/assets/logos/white.png"  alt="Elahi Empex" />
         </div>
         <section
           className={mobileNavOpen ? "mobilenav" : ""}
@@ -28,7 +28,7 @@ const Navbar = () => {
           <ul className={mobileNavOpen ? "active" : ""}>
             <li>
               <Link href="/">
-                <Image height={60} width={400}  src="/images/logo.png" alt="" />
+                <img  src="/assets/logos/white.png" alt="" />
               </Link>
             </li>
             <li>
