@@ -230,7 +230,7 @@ const Contact = () => {
                 Faisalabad - Pakistan
               </p>
               <div className="socialhandles">
-                <a href="">
+                <a href="https://www.facebook.com/profile.php?id=61554928763673&mibextid=ZbWKwL">
                   {" "}
                   <i className="bx bxl-facebook"></i>
                 </a>
@@ -238,7 +238,7 @@ const Contact = () => {
                   {" "}
                   <i className="bx bxl-twitter"></i>
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/elahiimpexofficial?igshid=MmVlMjlkMTBhMg==" target="_blank">
                   {" "}
                   <i className="fa-brands fa-instagram"></i>
                 </a>
