@@ -1,13 +1,47 @@
 import Link from "next/link";
 import React from "react";
 
+import Image from "next/image";
+
 const manfacturing = () => {
+ const  ManufactureData = [
+    {
+      img: "./public/images/weaving.jpeg",
+      content:
+        "Elahi Impex, a vertically integrated weaving powerhouse,showcases a monthly weaving capacity of 1.2 million metersacross various weaves, producing Grey, Bleached, Dyed, PrintedFabrics, and Made Ups. Our state-of-the-art weaving mills areequipped with modern computerized machines, including Shuttless300 looms, Auto 80 & Power 100. This diverse loom portfolio ensures precision and efficiency in our textile production. Renowned for our global exports, Elahi Impex combines traditional craftsmanship with cutting-edge technology, delivering textiles that embody excellence and innovation in every woven thread.",
+      heading: "Weaving",
+    },
+    {
+      img: "./public/images/dyeing.jpeg",
+      content:
+        "Elahi Impex, a vertically integrated weaving powerhouse,showcases a monthly weaving capacity of 1.2 million metersacross various weaves, producing Grey, Bleached, Dyed, PrintedFabrics, and Made Ups. Our state-of-the-art weaving mills areequipped with modern computerized machines, including Shuttless300 looms, Auto 80 & Power 100. This diverse loom portfolio ensures precision and efficiency in our textile production. Renowned for our global exports, Elahi Impex combines traditional craftsmanship with cutting-edge technology, delivering textiles that embody excellence and innovation in every woven thread.",
+      heading: "Dyeing",
+    },
+    {
+      img: "./public/images/Processing.jpeg",
+      content:
+        "Elahi Impex, a vertically integrated weaving powerhouse,showcases a monthly weaving capacity of 1.2 million metersacross various weaves, producing Grey, Bleached, Dyed, PrintedFabrics, and Made Ups. Our state-of-the-art weaving mills areequipped with modern computerized machines, including Shuttless300 looms, Auto 80 & Power 100. This diverse loom portfolio ensures precision and efficiency in our textile production. Renowned for our global exports, Elahi Impex combines traditional craftsmanship with cutting-edge technology, delivering textiles that embody excellence and innovation in every woven thread.",
+      heading: "Processing",
+    },
+    {
+      img: "./public/images/Stitching.jpeg",
+      content:
+        "Elahi Impex, a vertically integrated weaving powerhouse,showcases a monthly weaving capacity of 1.2 million metersacross various weaves, producing Grey, Bleached, Dyed, PrintedFabrics, and Made Ups. Our state-of-the-art weaving mills areequipped with modern computerized machines, including Shuttless300 looms, Auto 80 & Power 100. This diverse loom portfolio ensures precision and efficiency in our textile production. Renowned for our global exports, Elahi Impex combines traditional craftsmanship with cutting-edge technology, delivering textiles that embody excellence and innovation in every woven thread.",
+      heading: "Stitching",
+    },
+  ];
+
+
+
+
   return (
     <>
       <div className="parent">
         <div className="manfacturing">
           <div className="man-grid-waving">
-            <div className="manficbgimg waving"></div>
+            <div className="manifacturingImage">
+              <Image src={""} height={400} width={400} alt=""></Image>
+            </div>
             <div className="manfccontent">
               <h2>Weaving</h2>
               <p>
@@ -28,6 +62,7 @@ const manfacturing = () => {
               </div>
             </div>
           </div>
+
           <div className="man-grid-Dyeing">
             <div className="manfccontent">
               <h2>Dyeing</h2>

@@ -26,6 +26,16 @@
 .Stitching {
   background-image: url(../public/images/Stitching.jpeg);
 }
+
+
+
+
+.manifacturingImage img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
 .manficbgimg {
   min-height: 25vh;
   background-size: cover;
