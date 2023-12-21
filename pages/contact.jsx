@@ -200,10 +200,7 @@ const Contact = () => {
                 If you are a retailer or wholesaler interested in our products,
                 please reach out to our wholesale team:
               </p>
-              {/* <div className="social-email">
-                <i className="bx bx-envelope"></i>
-                <a href={"mailto:export@elahiimpex.com"}>export@elahiimpex.com</a>
-              </div> */}
+              
               <div className="social-phone">
                 <i className="bx bx-phone"></i>
                 <a href="tel:+923218660550">+923008660854</a>
@@ -217,24 +214,26 @@ const Contact = () => {
             <div className="corpOffice">
               <h2>Office #1</h2>
               <p>
-                <strong>Mill Address</strong> :Mill # 1: Rehman Abad, Factory
-                Area, G.M. Abad Faisalabad, Pakistan
+                <strong>Mill Address</strong> :Rehman Abad, Factory Area, G.M. Abad Faisalabad, Pakistan.
               </p>
             </div>
             <div className="corpOffice">
               <h2>Office #2</h2>
               <p>
-                <strong>Mill Address #2</strong> :5-Giraiyn. besides Small
-                Industrial Estate. Bypass Raod 5-km Toward Aminpur Bypass Office
-                # 5, Ist Floor, Hussain Market, Near Al-Falah Bank, Yarn Market
-                Faisalabad - Pakistan
+                <strong>Mill Address #2</strong> :1st Floor, Hussain Market, Near Al-Falah Bank, Yarn Market Faisalabad - Pakistan
+              </p>
+            </div>
+            <div className="corpOffice">
+              <h2>Office #3</h2>
+              <p>
+                <strong>Mill Address #3</strong> 5-Giraiy, besides Small Industrial Estate. Bypass Road 5-km Toward Aminpur Bypass.
               </p>
               <div className="socialhandles">
                 <a href="https://www.facebook.com/profile.php?id=61554928763673&mibextid=ZbWKwL">
                   {" "}
                   <i className="bx bxl-facebook"></i>
                 </a>
-                <a href="">
+                <a href="https://twitter.com/elahiimpex" target="_blank">
                   {" "}
                   <i className="bx bxl-twitter"></i>
                 </a>
