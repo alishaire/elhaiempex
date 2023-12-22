@@ -38,9 +38,33 @@ const manfacturing = () => {
     <>
       <div className="parent">
         <div className="manfacturing">
-          <div className="man-grid-waving">
-            <div className="manifacturingImage">
-              <Image src={""} height={400} width={400} alt=""></Image>
+        <div className="branchesNav">
+          
+          <div className="eachNavOuter">
+            <a href="#Weaving" className="innerNav">
+            Weaving
+            </a>
+          </div>
+          <div className="eachNavOuter">
+            <a href="#Dyeing" className="innerNav">
+            Dyeing
+            </a>
+          </div>
+          <div className="eachNavOuter">
+            <a href="#Processing" className="innerNav">
+            Processing
+            </a>
+          </div>
+          <div className="eachNavOuter ">
+            <a href="#Stitching" className="innerNav">
+            Stitching
+            </a>
+          </div>
+          
+        </div>
+          <div className="man-grid-waving" id="Weaving">
+            <div className="manifacturingImage" >
+              <Image src={"/images/weaving.jpeg"} height={400} width={400} alt=""></Image>
             </div>
             <div className="manfccontent">
               <h2>Weaving</h2>
@@ -63,8 +87,8 @@ const manfacturing = () => {
             </div>
           </div>
 
-          <div className="man-grid-Dyeing">
-            <div className="manfccontent">
+          <div className="man-grid-Dyeing" id="Dyeing">
+            <div className="manfccontent" >
               <h2>Dyeing</h2>
               <p>
                 Elahi Impex is equipped with comprehensive dyeing facilities,
@@ -83,10 +107,12 @@ const manfacturing = () => {
                 <Link href="/contact">Add Inquery</Link>
               </div>
             </div>
-            <div className=" manficbgimg Dyeing"></div>
+            <div className=" manficbgimg">
+            <Image src={"/images/dyeing.jpeg"} height={400} width={400} alt=""></Image>
+            </div>
           </div>
-          <div className="man-grid-Processing">
-            <div className="manficbgimg Processing"></div>
+          <div className="man-grid-Processing" id="Processing">
+            <div className="manficbgimg" >        <Image src={"/images/Processing.jpeg"} height={400} width={400} alt=""></Image></div>
             <div className="manfccontent">
               <h2>Processing</h2>
               <p>
@@ -106,8 +132,8 @@ const manfacturing = () => {
               </div>
             </div>
           </div>
-          <div className="man-grid-Stitching">
-            <div className="manfccontent">
+          <div className="man-grid-Stitching" id="Stitching">
+            <div className="manfccontent" >
               <h2>Stitching</h2>
               <p>
                 Elahi Impex prides itself on its advanced stitching
@@ -125,7 +151,7 @@ const manfacturing = () => {
                 <Link href="/contact">Add Inquery</Link>
               </div>
             </div>
-            <div className="manficbgimg Stitching"></div>
+            <div className="manficbgimg ">        <Image src={"/images/Stitching.jpeg"} height={400} width={400} alt=""></Image></div>
           </div>
         </div>
       </div>

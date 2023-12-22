@@ -13,9 +13,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: dense;
+  margin-top: 50px;
+  padding: 10px;
 }
 .waving {
   background-image: url(../public/images/weaving.jpeg);
+
 }
 .Dyeing {
   background-image: url(../public/images/dyeing.jpeg);
@@ -25,6 +28,55 @@
 }
 .Stitching {
   background-image: url(../public/images/Stitching.jpeg);
+}
+.branchesNav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.branchesNav a {
+  font-family: var(--paraFont);
+  font-size: calc(10px + .5vw);
+}
+
+.eachNavOuter {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width:768px) {
+  .eachNavOuter {
+      width: 50%;
+  }
+}
+
+.eachNavOuter .innerNav {
+  color: var(--blueMain);
+  border: 1px solid rgba(0, 0, 255, 10%);
+  text-decoration: none;
+  padding: 1vw;
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+}
+
+.branchesNav .commingSoon a {
+  color: rgba(20, 84, 149, 30%);
+  font-family: var(--paraFont);
+}
+
+.commingSoonBranches {
+  padding: 20vh 0vh;
+}
+
+.commingSoonBranches h1 {
+  text-align: center;
 }
 
 
