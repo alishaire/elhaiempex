@@ -64,7 +64,7 @@ const manfacturing = () => {
         </div>
           <div className="man-grid-waving" id="Weaving">
             <div className="manifacturingImage" >
-              <Image src={"/images/weaving.jpeg"} height={400} width={400} alt=""></Image>
+              <Image src={"/images/weaving.jpeg"} className="manfimage" height={400} width={400} alt=""></Image>
             </div>
             <div className="manfccontent">
               <h2>Weaving</h2>
@@ -108,11 +108,11 @@ const manfacturing = () => {
               </div>
             </div>
             <div className=" manficbgimg">
-            <Image src={"/images/dyeing.jpeg"} height={400} width={400} alt=""></Image>
+            <Image className="manfimage"  src={"/images/dyeing.jpeg"} height={400} width={400} alt=""></Image>
             </div>
           </div>
           <div className="man-grid-Processing" id="Processing">
-            <div className="manficbgimg" >        <Image src={"/images/Processing.jpeg"} height={400} width={400} alt=""></Image></div>
+            <div className="manficbgimg" >        <Image className="manfimage"  src={"/images/Processing.jpeg"} height={400} width={400} alt=""></Image></div>
             <div className="manfccontent">
               <h2>Processing</h2>
               <p>
@@ -151,7 +151,7 @@ const manfacturing = () => {
                 <Link href="/contact">Add Inquery</Link>
               </div>
             </div>
-            <div className="manficbgimg ">        <Image src={"/images/Stitching.jpeg"} height={400} width={400} alt=""></Image></div>
+            <div className="manficbgimg ">        <Image className="manfimage"  src={"/images/Stitching.jpeg"} height={400} width={400} alt=""></Image></div>
           </div>
         </div>
       </div>

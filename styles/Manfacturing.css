@@ -16,6 +16,10 @@
   margin-top: 50px;
   padding: 10px;
 }
+.manfimage{
+  width: 100%;
+  height: auto;
+}
 .waving {
   background-image: url(../public/images/weaving.jpeg);
 
